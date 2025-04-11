@@ -52,7 +52,7 @@ O **App Melodia** é um projeto front-end desenvolvido para praticar Tailwind CS
 - **Cores**: Gradiente vibrante (roxo/azul) + preto/branco
 - **Layout**: Clean, com espaçamento equilibrado
 
-## 🚀 Como Executar
+## 🚀 Como Executar Localmente
 
 1. Clone o repositório:
    ```bash
