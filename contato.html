@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="./src/assets/favicon.png" type="image/x-icon">
     <script>
         tailwind.config = {
             theme: {
@@ -48,11 +49,11 @@
                 <h1 class="text-2xl font-bold gradient-text">App Melodia</h1>
             </div>
             <nav class="hidden md:flex space-x-6">
-                <a href="index.html" class="text-dark-200 hover:text-primary-300 transition">Início</a>
+                <a href="./index.html" class="text-dark-200 hover:text-primary-300 transition">Início</a>
                 <a href="#" class="text-dark-200 hover:text-primary-300 transition">Explorar</a>
                 <a href="#" class="text-dark-200 hover:text-primary-300 transition">Biblioteca</a>
                 <a href="#" class="text-dark-200 hover:text-primary-300 transition">Premium</a>
-                <a href="#" class="text-dark-200 hover:text-primary-300 transition">Contato</a>
+                <a href="#" class="text-primary-300">Contato</a>
             </nav>
             <div class="flex items-center space-x-4">
                 <button class="bg-primary-600 hover:bg-primary-500 text-white px-4 py-2 rounded-full font-medium transition">
@@ -148,32 +149,6 @@
     </footer>
 
     <script src="./src/scripts/script.js"></script>
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(send) {
-            send.preventDefault();
-
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            const formMessage = document.getElementById('formMessage');
-
-            if (name && email && subject && message) {
-                formMessage.classList.remove('hidden', 'text-red-500');
-                formMessage.classList.add('text-green-500');
-                formMessage.textContent = 'Mensagem enviada com sucesso! Entraremos em contato em breve.';
-                this.reset();
-            } else {
-                formMessage.classList.remove('hidden', 'text-green-500');
-                formMessage.classList.add('text-red-500');
-                formMessage.textContent = 'Por favor, preencha todos os campos.';
-            }
-
-            // Limpa mensagem após 5 segundos
-            setTimeout(() => {
-                formMessage.classList.add('hidden');
-            }, 5000);
-        });
-    </script>
+    <script src="./src/scripts/contato.js"></script>
 </body>
 </html>
