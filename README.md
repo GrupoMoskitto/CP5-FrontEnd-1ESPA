@@ -23,7 +23,7 @@
 
 ## 📌 Sobre o Projeto
 
-O **App Melodia** é um projeto front-end desenvolvido para praticar Tailwind CSS, criando uma landing page moderna para um player de música fictício. O slogan oficial é:  
+O **App Melodia** é um projeto front-end desenvolvido para praticar principalmente o uso do Tailwind CSS, criando uma landing page moderna para um player de música fictício. O slogan oficial é:  
 *"Sua música, sua forma. Descubra, ouça e compartilhe suas músicas favoritas."*
 
 ## ✨ Funcionalidades Implementadas
@@ -44,6 +44,8 @@ O **App Melodia** é um projeto front-end desenvolvido para praticar Tailwind CS
 | Tecnologia         | Uso                              |
 |--------------------|----------------------------------|
 | **HTML5**          | Estrutura semântica da página    |
+| **CSS3**           | Estilizações customizadas        |
+| **JavaScript**     | Funcionalidades extras usando JS |
 | **Tailwind CSS**   | Estilização completa e responsiva|
 | **Font Awesome**   | Ícones intuitivos                |
 
