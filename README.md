@@ -45,6 +45,7 @@ O **App Melodia** é um projeto front-end desenvolvido para praticar Tailwind CS
 |--------------------|----------------------------------|
 | **[HTML5](https://www.w3.org/TR/html5/)**          | Estrutura semântica da página    |
 | **[Tailwind CSS](https://tailwindcss.com/)**   | Estilização completa e responsiva|
+| **[JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**   | Interatividade a página |
 | **[Font Awesome](https://fontawesome.com/)**   | Ícones intuitivos                |
 
 ## 🧑‍🎨 Design
