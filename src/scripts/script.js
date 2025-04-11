@@ -63,3 +63,7 @@ document.addEventListener('mouseup', () => {
 volumeContainer.addEventListener('click', (e) => {
     setVolumePosition(e.clientX);
 });
+
+function redirectHome() {
+    window.location.href = "./index.html";
+}

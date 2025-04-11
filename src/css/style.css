@@ -157,6 +157,10 @@ body {
     height: 40px;
 }
 
+#href-home:hover {
+    cursor: pointer;
+}
+
 /* Espaço para o player */
 main, section {
     padding-bottom: 100px; /* Espaço para o player fixo */
