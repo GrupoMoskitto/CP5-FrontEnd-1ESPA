@@ -38,7 +38,6 @@ O **App Melodia** é um projeto front-end desenvolvido para praticar Tailwind CS
 
 - **Página de Contato**  
   - Formulário responsivo
-  - Integração visual com ícones (Font Awesome)
 
 ## 🛠 Tecnologias Utilizadas
 
