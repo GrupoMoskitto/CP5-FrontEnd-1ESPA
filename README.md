@@ -43,16 +43,15 @@ O **App Melodia** é um projeto front-end desenvolvido para praticar principalme
 
 | Tecnologia         | Uso                              |
 |--------------------|----------------------------------|
-| **HTML5**          | Estrutura semântica da página    |
-| **CSS3**           | Estilizações customizadas        |
-| **JavaScript**     | Funcionalidades extras usando JS |
-| **Tailwind CSS**   | Estilização completa e responsiva|
-| **Font Awesome**   | Ícones intuitivos                |
+| **[HTML5](https://www.w3.org/TR/html5/)**          | Estrutura semântica da página    |
+| **[Tailwind CSS](https://tailwindcss.com/)**   | Estilização completa e responsiva|
+| **[JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**   | Interatividade a página |
+| **[Font Awesome](https://fontawesome.com/)**   | Ícones intuitivos                |
 
 ## 🧑‍🎨 Design
 
 - **Cores**: Gradiente vibrante (roxo/azul) + preto/branco
-- **Layout**: Clean, com espaçamento equilibrado
+- **Layout**: Clean e moderno, com espaçamento equilibrado
 
 ## 🚀 Como Executar Localmente
 
