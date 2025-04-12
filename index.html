@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,6 +43,7 @@
         }
     </script>
 </head>
+
 <body class="min-h-screen flex flex-col">
     <header class="bg-dark-900 py-4 px-6 shadow-lg">
         <div class="container mx-auto flex justify-between items-center">
@@ -57,7 +59,8 @@
                 <a href="./contato.html" class="text-dark-200 hover:text-primary-300 transition">Contato</a>
             </nav>
             <div class="flex items-center space-x-4">
-                <button class="bg-primary-600 hover:bg-primary-500 text-white px-4 py-2 rounded-full font-medium transition">
+                <button
+                    class="bg-primary-600 hover:bg-primary-500 text-white px-4 py-2 rounded-full font-medium transition">
                     Entrar
                 </button>
                 <button class="md:hidden text-dark-200">
@@ -69,101 +72,290 @@
 
     <main class="flex-grow container mx-auto px-4 py-8">
         <!-- Seção Hero -->
-        <section class="mb-12">
-            <div class="bg-gradient-to-r from-dark-800 to-dark-900 rounded-2xl p-8 md:p-12 shadow-lg">
+        <section style="margin-bottom: -50px;">
+            <div class="bg-gradient-to-r from-dark-800 to-dark-900 rounded-2xl p-8">
                 <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">App Melodia: Sua Música, Sua Forma</h2>
                 <p class="text-dark-300 text-lg mb-6 max-w-2xl">
-                    Descubra milhões de músicas, crie playlists personalizadas e leve sua experiência musical 
+                    Descubra milhões de músicas, crie playlists personalizadas e leve sua experiência musical
                     para outro nível com qualidade de áudio premium e recomendações inteligentes.
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <button class="bg-primary-600 hover:bg-primary-500 text-white px-6 py-3 rounded-full font-medium transition flex items-center">
+                    <button
+                        class="bg-primary-600 hover:bg-primary-500 text-white px-6 py-3 rounded-full font-medium transition flex items-center">
                         <i class="fas fa-play mr-2"></i> Ouvir agora!
                     </button>
-                    <button class="border border-primary-500 text-primary-300 hover:bg-primary-900 hover:bg-opacity-30 px-6 py-3 rounded-full font-medium transition">
+                    <button
+                        class="border border-primary-500 text-primary-300 bg-primary-900 bg-opacity-50 hover:bg-primary-900 hover:bg-opacity-85 px-6 py-3 rounded-full font-medium transition">
                         Conhecer planos
                     </button>
+
                 </div>
             </div>
-        </section>
 
-        <!-- 2do -->
-         <h1 style="font-size:xx-large; color: red;">(temporario) 2do: adicionar screenshots do aplicativo (desktop & mobile) <br> Expliquem os principais benefícios do aplicativo
-            <br> Utilizem ícones do Font Awesome para destacar cada benefício <br> Diferenciais do aplicativo:
-            ● Qualidade de som superior
-            ● Criação de playlists personalizadas (COLOCAR (E ARRUMAR) NA SEÇÃO DE MUSICAS POPULARES)
-            ● Descoberta de novos artistas
-            ● Interface intuitiva
-            <br> </h1>
-         <br>
+            <!-- destaque dos principais beneficios do aplicativo -->
+            <div class="grid grid-cols-3 mt-12">
+                <div
+                    class="bg-gradient-to-br from-dark-800 to-dark-900 m-auto max-w-sm p-6 border border-purple-500 rounded-lg shadow-sm">
+                    <i class="fa-solid fa-file-audio" style="color: #8458f0; font-size: 28px; margin-bottom: 5%;"></i>
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight gradient-text">Qualidade de som excepcional
+                    </h5>
+                    <p class="mb-3 font-normal text-dark-300">Temos diversas opções de transmissão: Codec HE-AAC em 128,
+                        256 e 320 Kbps.</p>
+                </div>
+                <div
+                    class="bg-gradient-to-br from-dark-800 to-dark-900 m-auto max-w-sm p-6 border border-purple-500 rounded-lg shadow-sm">
+                    <i class="fa-solid fa-music" style="color: #8458f0; font-size: 28px; margin-bottom: 5%;"></i>
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight gradient-text">Criação de Playlists
+                        personalizadas</h5>
+                    <p class="mb-3 font-normal text-dark-300">Adicione suas músicas e albuns favoritos em playlists
+                        ilimitadas!</p>
+                </div>
+                <div
+                    class="bg-gradient-to-br from-dark-800 to-dark-900 m-auto max-w-sm p-6 border border-purple-500 rounded-lg shadow-sm">
+                    <i class="fa-solid fa-podcast" style="color: #8458f0; font-size: 28px; margin-bottom: 5%;"></i>
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight gradient-text">Descoberta de novos artistas
+                    </h5>
+                    <p class="mb-3 font-normal text-dark-300">Conheça novos artistas pelo nosso sistema de
+                        recomendações.</p>
+                </div>
+            </div>
+
+        </section>
 
 
         <!-- Seção Álbuns -->
         <section class="mb-12">
             <div class="flex justify-between items-center mb-6">
+
+                <!-- Seção Álbuns -->
                 <h3 class="text-2xl font-bold">Álbuns de Paramore</h3>
                 <a href="#" class="text-primary-400 hover:text-primary-300 text-sm font-medium">Ver todos</a>
             </div>
-            
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+
                 <!-- Álbum 1 -->
                 <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
                     <div class="relative mb-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Paramore_-_Riot%21.png/250px-Paramore_-_Riot%21.png" alt="Riot!" class="w-full rounded-lg">
-                        <button class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                        <img src="https://i.discogs.com/THP_SswCBhHmAf6U4ormYDUkGTyL2y-ui-S0bs4En2A/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMjkw/NjAtMTIyNTQxNDUz/NS5qcGVn.jpeg"
+                            alt="This Is Why" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">All We Know Is Falling</h4>
+                    <p class="text-dark-400 text-sm">Paramore • 2005</p>
+                </div>
+
+                <!-- Álbum 2 -->
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.discogs.com/DsAFhV8xI3QmBnQP21VZFDdWd6PFVKPvJdrz3pZ1iBg/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTYw/NDctMTIyNTQxNTIy/OS5qcGVn.jpeg"
+                            alt="Riot!" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
                             <i class="fas fa-play"></i>
                         </button>
                     </div>
                     <h4 class="font-bold text-white">Riot!</h4>
                     <p class="text-dark-400 text-sm">Paramore • 2007</p>
                 </div>
-                
-                <!-- Álbum 2 -->
+
+                <!-- Álbum 3 -->
                 <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
                     <div class="relative mb-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Paramore_-_Brand_New_Eyes.png/250px-Paramore_-_Brand_New_Eyes.png" alt="Brand New Eyes" class="w-full rounded-lg">
-                        <button class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                        <img src="https://i.discogs.com/JZbgQ_R55wElLnyUtCk0igyw_e3pd2M9tjBfovk0lK0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NTI0/ODItMTczOTk4NDQ3/My00MTk0LmpwZWc.jpeg"
+                            alt="Brand New Eyes" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
                             <i class="fas fa-play"></i>
                         </button>
                     </div>
                     <h4 class="font-bold text-white">Brand New Eyes</h4>
                     <p class="text-dark-400 text-sm">Paramore • 2009</p>
                 </div>
-                
-                <!-- Álbum 3 -->
+
+                <!-- Álbum 4 -->
                 <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
                     <div class="relative mb-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/2/2c/Pmorecover.png/250px-Pmorecover.png" alt="Paramore" class="w-full rounded-lg">
-                        <button class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                        <img src="https://i.discogs.com/HdY1UmUItuXBfERjc2rZgqriZR_gu09Dw8daLeg6i04/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NTY4/MjEtMTM2NTM3NDA1/Mi0yOTMwLmpwZWc.jpeg"
+                            alt="Paramore" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
                             <i class="fas fa-play"></i>
                         </button>
                     </div>
                     <h4 class="font-bold text-white">Paramore</h4>
                     <p class="text-dark-400 text-sm">Paramore • 2013</p>
                 </div>
-                
-                <!-- Álbum 4 -->
+
+                <!-- Álbum 5 -->
                 <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
                     <div class="relative mb-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/9/9b/After_Laughter_Paramore_album_cover.png/250px-After_Laughter_Paramore_album_cover.png" alt="After Laughter" class="w-full rounded-lg">
-                        <button class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                        <img src="https://i.discogs.com/TCwyaOcyBCtr9jHwi9IUUP6srDork3pb3MzNxtJJpiY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MjQ2/Njc4LTE2OTQ1Njc4/NTMtNDQ1NS5qcGVn.jpeg"
+                            alt="After Laughter" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
                             <i class="fas fa-play"></i>
                         </button>
                     </div>
                     <h4 class="font-bold text-white">After Laughter</h4>
                     <p class="text-dark-400 text-sm">Paramore • 2017</p>
                 </div>
-                
-                <!-- Álbum 5 -->
+            </div>
+        </section>
+
+        <!-- Seção Álbuns (Slipknot) -->
+        <section class="mb-12">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">Álbuns de Slipknot</h3>
+                <a href="#" class="text-primary-400 hover:text-primary-300 text-sm font-medium">Ver todos</a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Álbum 1 -->
                 <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
                     <div class="relative mb-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/a/ad/ThisIsWhy.jpg/250px-ThisIsWhy.jpg" alt="This Is Why" class="w-full rounded-lg">
-                        <button class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                        <img src="https://i.discogs.com/EWxPXODE0YtZwHUWpjy581jXpFnssiv-1Ei6q1FXL-U/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0NTQ4/MC0xNTc1MzI5OTk0/LTQyNDEuanBlZw.jpeg"
+                            alt="Slipknot" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
                             <i class="fas fa-play"></i>
                         </button>
                     </div>
-                    <h4 class="font-bold text-white">This Is Why</h4>
-                    <p class="text-dark-400 text-sm">Paramore • 2023</p>
+                    <h4 class="font-bold text-white">Slipknot</h4>
+                    <p class="text-dark-400 text-sm">Slipknot • 1999</p>
+                </div>
+
+                <!-- Álbum 2 -->
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.discogs.com/MJHt3X8RO77qi6q3ThzCkDj8aJKFxsp_ODLtcq6sePQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3NTI4/NzY1LTE2ODgwNTMz/NTYtMTg4OC5qcGVn.jpeg"
+                            alt="Vol. 3: (The Subliminal Verses)" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">Vol. 3: (The Subliminal Verses)</h4>
+                    <p class="text-dark-400 text-sm">Slipknot • 2004</p>
+                </div>
+
+                <!-- Álbum 3 -->
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.discogs.com/BewBcYzUzcnhDAxocBPKyrN5L7wooc9PTgzncFbKC4Y/rs:fit/g:sm/q:90/h:578/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NDMw/NTUtMTIyMDIwOTQ3/MC5qcGVn.jpeg"
+                            alt="All Hope Is Gone" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">All Hope Is Gone</h4>
+                    <p class="text-dark-400 text-sm">Slipknot • 2008</p>
+                </div>
+
+                <!-- Álbum 4 -->
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.discogs.com/aYZdMs0-RQC5EYNVMA99NtmIGBurPWwgLGiMg6PDkKI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MDk5/MDg4LTE1ODY2NjU5/MzEtMjk4OS5qcGVn.jpeg"
+                            alt=".5: The Gray Chapter" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">.5: The Gray Chapter</h4>
+                    <p class="text-dark-400 text-sm">Slipknot • 2014</p>
+                </div>
+
+                <!-- Álbum 5 -->
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.discogs.com/KsPu_vyQPLM0UA-6vBjE7VyXEKnlo-kyw1ApvLVOq5o/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzOTg3/MTIxLTE1NjU1MzQy/NTQtMzIxMS5qcGVn.jpeg"
+                            alt="We Are Not Your Kind" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">We Are Not Your Kind</h4>
+                    <p class="text-dark-400 text-sm">Slipknot • 2019</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Álbuns (Foreground Eclipse) -->
+        <section class="mb-12">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">Álbuns de Foreground Eclipse</h3>
+                <a href="#" class="text-primary-400 hover:text-primary-300 text-sm font-medium">Ver todos</a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Álbum 1 -->
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.discogs.com/VyQL02d1Aife4nnwmaAgm5OlpzYDCImJlDtfnxmZ7N8/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjM1/OTU5LTE2MDU3NDE3/NjItODIwNC5qcGVn.jpeg" alt="Wishes Hidden In The Foreground Noises" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">Wishes Hidden In The Foreground Noises</h4>
+                    <p class="text-dark-400 text-sm">Foreground Eclipse • 2009</p>
+                </div>
+
+                <!-- Álbum 2 -->
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.discogs.com/UJLcI_aMXy7tC7meUirxAfqIaP5N4fvT47X26MFzrRA/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjM2/MTIyLTE2MDU3NDIw/MjUtMzkxMC5qcGVn.jpeg" alt="Tears Will Become Melodies Tonight" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">Tears Will Become Melodies Tonight</h4>
+                    <p class="text-dark-400 text-sm">Foreground Eclipse • 2010</p>
+                </div>
+
+                <!-- Álbum 3 -->
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.discogs.com/o_TAE-hinEHmp1B1dY7L0E92WtmMQdbEk0KAQ555IWk/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTg5/NDU5LTE1NDYwMDQ4/MTQtOTE0MS5qcGVn.jpeg" alt="Each And Every Word Leaves Me Here Alone" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">Each And Every Word Leaves Me Here Alone</h4>
+                    <p class="text-dark-400 text-sm">Foreground Eclipse • 2011</p>
+                </div>
+
+                <!-- Álbum 4 -->
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.discogs.com/ULHB14c6s0TXKePb8kG9M9s7n58_fl8N0CvZZh9bnfc/rs:fit/g:sm/q:90/h:560/w:560/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODk3/MzQzLTE1MDYzMjUx/NTgtNDUwOC5qcGVn.jpeg" alt="Seated With Liquor" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">Seated With Liquor</h4>
+                    <p class="text-dark-400 text-sm">Foreground Eclipse & Draw The Emotional • 2012</p>
+                </div>
+
+                <!-- Álbum 5 -->
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.discogs.com/-17E2X7zbd-r6G0K0rUQdtY4DOKVhCTgBKOSoIKl_pk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMzU2/MzYyLTE1MzM1OTA4/MTAtOTgxNi5qcGVn.jpeg" alt="Stories That Last Through The Sleepless Nights" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">Stories That Last Through The Sleepless Nights</h4>
+                    <p class="text-dark-400 text-sm">Foreground Eclipse • 2013</p>
                 </div>
             </div>
         </section>
@@ -174,23 +366,26 @@
                 <h3 class="text-2xl font-bold">Músicas Populares</h3>
                 <a href="#" class="text-primary-400 hover:text-primary-300 text-sm font-medium">Ver todas</a>
             </div>
-            
+
             <div class="bg-dark-800 rounded-xl overflow-hidden shadow-lg">
                 <!-- Tabela -->
-                <div class="grid grid-cols-12 gap-4 px-6 py-3 border-b border-dark-700 text-dark-400 text-sm font-medium">
+                <div
+                    class="grid grid-cols-12 gap-4 px-6 py-3 border-b border-dark-700 text-dark-400 text-sm font-medium">
                     <div class="col-span-1">#</div>
                     <div class="col-span-5 md:col-span-6">TÍTULO</div>
                     <div class="col-span-4 md:col-span-3">ÁLBUM</div>
-                    <div class="col-span-2 md:col-span-2 text-right">DURAÇÃO</div>
+                    <div class="col-span-1 md:col-span-1">DURAÇÃO</div>
                 </div>
-                
+
                 <!-- Lista de músicas -->
                 <div class="divide-y divide-dark-700">
                     <!-- Música 1 -->
-                    <div class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
+                    <div
+                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
                         <div class="col-span-1 text-dark-400">1</div>
                         <div class="col-span-5 md:col-span-6 flex items-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Paramore_-_Riot%21.png/250px-Paramore_-_Riot%21.png" alt="Riot!" class="w-10 h-10 mr-3 rounded">
+                            <img src="https://i.discogs.com/DsAFhV8xI3QmBnQP21VZFDdWd6PFVKPvJdrz3pZ1iBg/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTYw/NDctMTIyNTQxNTIy/OS5qcGVn.jpeg"
+                                alt="Riot!" class="w-10 h-10 mr-3 rounded">
                             <div>
                                 <p class="font-medium text-white">Misery Business</p>
                                 <p class="text-sm text-dark-400">Paramore</p>
@@ -204,12 +399,14 @@
                             </button>
                         </div>
                     </div>
-                    
+
                     <!-- Música 2 -->
-                    <div class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
+                    <div
+                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
                         <div class="col-span-1 text-dark-400">2</div>
                         <div class="col-span-5 md:col-span-6 flex items-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Paramore_-_Brand_New_Eyes.png/250px-Paramore_-_Brand_New_Eyes.png" alt="Brand New Eyes" class="w-10 h-10 mr-3 rounded">
+                            <img src="https://i.discogs.com/JZbgQ_R55wElLnyUtCk0igyw_e3pd2M9tjBfovk0lK0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NTI0/ODItMTczOTk4NDQ3/My00MTk0LmpwZWc.jpeg"
+                                alt="Brand New Eyes" class="w-10 h-10 mr-3 rounded">
                             <div>
                                 <p class="font-medium text-white">Ignorance</p>
                                 <p class="text-sm text-dark-400">Paramore</p>
@@ -223,12 +420,14 @@
                             </button>
                         </div>
                     </div>
-                    
+
                     <!-- Música 3 -->
-                    <div class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
+                    <div
+                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
                         <div class="col-span-1 text-dark-400">3</div>
                         <div class="col-span-5 md:col-span-6 flex items-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Paramore_-_Riot%21.png/250px-Paramore_-_Riot%21.png" alt="Riot!" class="w-10 h-10 mr-3 rounded">
+                            <img src="https://i.discogs.com/DsAFhV8xI3QmBnQP21VZFDdWd6PFVKPvJdrz3pZ1iBg/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTYw/NDctMTIyNTQxNTIy/OS5qcGVn.jpeg"
+                                alt="Riot!" class="w-10 h-10 mr-3 rounded">
                             <div>
                                 <p class="font-medium text-white">That's What You Get</p>
                                 <p class="text-sm text-dark-400">Paramore</p>
@@ -242,12 +441,14 @@
                             </button>
                         </div>
                     </div>
-                    
+
                     <!-- Música 4 -->
-                    <div class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
+                    <div
+                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
                         <div class="col-span-1 text-dark-400">4</div>
                         <div class="col-span-5 md:col-span-6 flex items-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Paramore_-_Brand_New_Eyes.png/250px-Paramore_-_Brand_New_Eyes.png" alt="Brand New Eyes" class="w-10 h-10 mr-3 rounded">
+                            <img src="https://i.discogs.com/JZbgQ_R55wElLnyUtCk0igyw_e3pd2M9tjBfovk0lK0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NTI0/ODItMTczOTk4NDQ3/My00MTk0LmpwZWc.jpeg"
+                                alt="Brand New Eyes" class="w-10 h-10 mr-3 rounded">
                             <div>
                                 <p class="font-medium text-white">The Only Exception</p>
                                 <p class="text-sm text-dark-400">Paramore</p>
@@ -261,12 +462,14 @@
                             </button>
                         </div>
                     </div>
-                    
+
                     <!-- Música 5 -->
-                    <div class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
+                    <div
+                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
                         <div class="col-span-1 text-dark-400">5</div>
                         <div class="col-span-5 md:col-span-6 flex items-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/2/2c/Pmorecover.png/250px-Pmorecover.png" alt="Paramore" class="w-10 h-10 mr-3 rounded">
+                            <img src="https://i.discogs.com/HdY1UmUItuXBfERjc2rZgqriZR_gu09Dw8daLeg6i04/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NTY4/MjEtMTM2NTM3NDA1/Mi0yOTMwLmpwZWc.jpeg"
+                                alt="Paramore" class="w-10 h-10 mr-3 rounded">
                             <div>
                                 <p class="font-medium text-white">Still Into You</p>
                                 <p class="text-sm text-dark-400">Paramore</p>
@@ -298,10 +501,15 @@
                 <!-- Depoimento 1 -->
                 <div class="swiper-slide">
                     <div class="bg-dark-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-                        <p class="text-dark-300 italic mb-4">"O App Melodia transformou a forma como ouço música. As recomendações são incríveis e a qualidade do som é imbatível!"</p>
+                        <p class="text-dark-300 italic mb-4">"O App Melodia transformou a forma como ouço música. As
+                            recomendações são incríveis e a qualidade do som é imbatível!"</p>
                         <div class="flex items-center space-x-4">
                             <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                                <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                                <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
                             </div>
                             <div>
                                 <p class="font-semibold text-white">Ana Santana</p>
@@ -314,10 +522,15 @@
                 <!-- Depoimento 2 -->
                 <div class="swiper-slide">
                     <div class="bg-dark-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-                        <p class="text-dark-300 italic mb-4">"Adoro a interface intuitiva e as playlists personalizadas, recomendo para todos os tipos de usúarios. Melhor app de música que já usei!"</p>
+                        <p class="text-dark-300 italic mb-4">"Adoro a interface intuitiva e as playlists personalizadas,
+                            recomendo para todos os tipos de usúarios. Melhor app de música que já usei!"</p>
                         <div class="flex items-center space-x-4">
                             <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                                <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                                <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
                             </div>
                             <div>
                                 <p class="font-semibold text-white">João Matos</p>
@@ -330,10 +543,15 @@
                 <!-- Depoimento 3 -->
                 <div class="swiper-slide">
                     <div class="bg-dark-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-                        <p class="text-dark-300 italic mb-4">"Desde que comecei a usar o App Melodia, não consigo parar de descobrir novas músicas. Fantástico!"</p>
+                        <p class="text-dark-300 italic mb-4">"Desde que comecei a usar o App Melodia, não consigo parar
+                            de descobrir novas músicas. Fantástico!"</p>
                         <div class="flex items-center space-x-4">
                             <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                                <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                                <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
                             </div>
                             <div>
                                 <p class="font-semibold text-white">Gabriel Kato</p>
@@ -346,10 +564,15 @@
                 <!-- Depoimento 4 -->
                 <div class="swiper-slide">
                     <div class="bg-dark-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-                        <p class="text-dark-300 italic mb-4">"Aplicativo muito bonito e rápido, consigo ouvir minhas músicas em qualquer lugar! Simplesmente amei!"</p>
+                        <p class="text-dark-300 italic mb-4">"Aplicativo muito bonito e rápido, consigo ouvir minhas
+                            músicas em qualquer lugar! Simplesmente amei!"</p>
                         <div class="flex items-center space-x-4">
                             <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                                <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                                <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
                             </div>
                             <div>
                                 <p class="font-semibold text-white">Gabriel Couto</p>
@@ -371,16 +594,17 @@
 
     <!-- Player de Música -->
     <div class="music-player fixed bottom-0 left-0 right-0 bg-dark-800 border-t border-dark-700 shadow-lg">
-        <div class="container mx-auto px-4 py-3">
+        <div class="container mx-auto">
             <!-- Barra de progresso -->
             <div class="progress-bar mb-2 rounded-full">
                 <div class="progress-fill rounded-full"></div>
             </div>
-            
+
             <div class="flex items-center justify-between">
                 <!-- Informações da música -->
                 <div class="flex items-center space-x-4 w-1/4">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Paramore_-_Riot%21.png/250px-Paramore_-_Riot%21.png" alt="Riot!" class="w-12 h-12 rounded">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Paramore_-_Riot%21.png/250px-Paramore_-_Riot%21.png"
+                        alt="Riot!" class="w-12 h-12 rounded">
                     <div>
                         <p class="font-medium text-white">Misery Business</p>
                         <p class="text-sm text-dark-400">Paramore</p>
@@ -389,7 +613,7 @@
                         <i class="far fa-heart"></i>
                     </button>
                 </div>
-                
+
                 <!-- Controles do player -->
                 <div class="flex items-center justify-center space-x-6">
                     <button class="text-dark-400 hover:text-white">
@@ -398,7 +622,8 @@
                     <button class="text-dark-400 hover:text-white">
                         <i class="fas fa-step-backward"></i>
                     </button>
-                    <button class="play-btn player-controls bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                    <button
+                        class="play-btn player-controls bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
                         <i class="fas fa-play"></i>
                     </button>
                     <button class="text-dark-400 hover:text-white">
@@ -408,7 +633,7 @@
                         <i class="fas fa-redo"></i>
                     </button>
                 </div>
-                
+
                 <!-- Controles de volume e outros -->
                 <div class="flex items-center space-x-4 justify-end w-1/4">
                     <button class="text-dark-400 hover:text-white">
@@ -425,7 +650,8 @@
                         <div class="volume-slider-container ml-2">
                             <div class="w-24 h-1 bg-dark-600 rounded-full relative">
                                 <div class="volume-slider h-full rounded-full" style="width: 75%"></div>
-                                <div class="volume-dot absolute top-1/2 transform -translate-y-1/2 w-3 h-3 bg-white rounded-full cursor-grab active:cursor-grabbing" style="left: 72%"></div>
+                                <div class="volume-dot absolute top-1/2 transform -translate-y-1/2 w-3 h-3 bg-white rounded-full cursor-grab active:cursor-grabbing"
+                                    style="left: 72%"></div>
                             </div>
                         </div>
                     </div>
@@ -445,13 +671,17 @@
                     </div>
                     <p class="mb-4">Sua música, sua forma. Descubra, ouça e compartilhe suas músicas favoritas.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h3 class="text-white font-bold mb-4">Empresa</h3>
                     <ul class="space-y-2">
@@ -460,7 +690,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="border-t border-dark-800 mt-8 pt-8 text-sm">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <div class="flex space-x-4 mb-4 md:mb-0">
@@ -482,4 +712,5 @@
     <script src="./src/scripts/carrossel.js"></script>
     <script src="./src/scripts/script.js"></script>
 </body>
+
 </html>
