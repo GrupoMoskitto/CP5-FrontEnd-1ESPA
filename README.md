@@ -32,6 +32,10 @@ O **App Melodia** é um projeto front-end desenvolvido para praticar principalme
   - Controles de play/pause, próximo/anterior e barra de progresso
   - Visualização da capa do álbum e informações da faixa
 
+- **Seção de melhores álbuns**
+  - Seções com álbuns mais ouvidos pelo usuário
+  - Seções de músicas mais ouvidas do momento
+
 - **Seção de Depoimentos**  
   - Cards com avaliações de usuários fictícios
   - Fotos de perfil e depoimentos
