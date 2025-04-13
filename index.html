@@ -8,8 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./src/css/style.css">
     <link rel="shortcut icon" href="./src/assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -626,14 +626,12 @@
             <div class="container mx-auto">
                 <!-- Barra de progresso -->
                 <div class="progress-bar mb-2 rounded-full">
-                    <div
-                        class="progress-fill rounded-full flex items-center space-x-4 sm:w-1/3 w-full justify-center sm:justify-start">
-                    </div>
+                    <div class="progress-fill rounded-full"></div>
                 </div>
 
-                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0 px-4 py-2">
+                <div class="player-content flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0 px-4 py-2">
                     <!-- Informações da música -->
-                    <div class="flex items-center space-x-4 sm:w-1/3 w-full justify-center sm:justify-start">
+                    <div class="song-info flex items-center space-x-4">
                         <img src="https://i.discogs.com/DsAFhV8xI3QmBnQP21VZFDdWd6PFVKPvJdrz3pZ1iBg/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTYw/NDctMTIyNTQxNTIy/OS5qcGVn.jpeg"
                             alt="Riot!" class="w-12 h-12 rounded">
                         <div>
@@ -645,28 +643,26 @@
                         </button>
                     </div>
 
-                    <!-- Controles do player -->
-                    <div class="flex items-center justify-center space-x-6">
-                        <button class="text-dark-400 hover:text-white">
-                            <i class="fas fa-random"></i>
-                        </button>
-                        <button class="text-dark-400 hover:text-white">
+                   <!-- Controles do player -->
+                    <div class="player-controls flex items-center justify-center space-x-6">
+                        <button class="prev-btn text-dark-400 hover:text-white">
                             <i class="fas fa-step-backward"></i>
                         </button>
-                        <button
-                            class="play-btn player-controls bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                        <button class="play-btn bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
                             <i class="fas fa-play"></i>
                         </button>
-                        <button class="text-dark-400 hover:text-white">
+                        <button class="next-btn text-dark-400 hover:text-white">
                             <i class="fas fa-step-forward"></i>
+                        </button>
+                        <button class="text-dark-400 hover:text-white">
+                            <i class="fas fa-random"></i>
                         </button>
                         <button class="text-dark-400 hover:text-white">
                             <i class="fas fa-redo"></i>
                         </button>
                     </div>
-
                     <!-- Controles de volume e outros -->
-                    <div class="flex items-center space-x-4 lg:justify-end sm:w-1/3 sm:justify-center">
+                    <div class="player-options flex items-center space-x-4">
                         <button class="text-dark-400 hover:text-white">
                             <i class="fas fa-list-ul"></i>
                         </button>
@@ -674,7 +670,7 @@
                             <i class="fas fa-laptop"></i>
                         </button>
                         <!-- Controle de Volume Visual (arrastável mas não funcional) -->
-                        <div class="flex items-center volume-control">
+                        <div class="volume-control flex items-center">
                             <button class="text-dark-400 hover:text-white">
                                 <i class="fas fa-volume-up text-lg"></i>
                             </button>
@@ -729,6 +725,7 @@
                             <li><a href="./premium.html" class="hover:text-primary-400 transition">Premium Família</a></li>
                         </ul>
                     </div>
+
                 </div>
 
                 <div class="border-t border-dark-800 mt-8 pt-8 text-sm">
