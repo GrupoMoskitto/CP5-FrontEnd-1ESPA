@@ -59,7 +59,7 @@ O slogan oficial é: *"Sua música, sua forma. Descubra, ouça e compartilhe sua
 | **[Tailwind CSS](https://tailwindcss.com/)**   | Estilização completa e responsiva|
 | **[JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**   | Interatividade a página |
 | **[Font Awesome](https://fontawesome.com/)**   | Ícones intuitivos                |
-| **[Discogs](https://www.discogs.com/pt_BR/)**   | Banco de Dados das Capas de Álbum                |
+| **[Discogs](https://www.discogs.com/pt_BR/)**   | Banco de dados das capas de álbum                |
 
 ## 🧑‍🎨 Design
 
