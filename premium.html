@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium - App Melodia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="./src/assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/premium.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            100: '#d8c4ff',
+                            200: '#b388ff',
+                            300: '#8a5cf7',
+                            400: '#6a3ce8',
+                            500: '#4a1fd9',
+                            600: '#3a19b5',
+                            700: '#2a1391',
+                            800: '#1a0d6d',
+                            900: '#0a0749',
+                        },
+                        dark: {
+                            100: '#f1f1f1',
+                            200: '#d4d4d4',
+                            300: '#b8b8b8',
+                            400: '#9c9c9c',
+                            500: '#808080',
+                            600: '#636363',
+                            700: '#474747',
+                            800: '#2a2a2a',
+                            900: '#0e0e0e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <header class="bg-dark-900 py-4 px-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2" id="href-home" onclick="redirectHome()">
+                <img src="./src/assets/mkttlogo.png" class="fas h-10 w-10 text-primary-400 text-2xl"></img>
+                <h1 class="text-2xl font-bold gradient-text">App Melodia</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="./index.html" class="text-dark-200 hover:text-primary-300 transition">Início</a>
+                <a href="explorar.html" class="text-dark-200 hover:text-primary-300 transition">Explorar</a>
+                <a href="#" class="text-dark-200 hover:text-primary-300 transition">Biblioteca</a>
+                <a href="./premium.html" class="text-primary-300">Premium</a>
+                <a href="./contato.html" class="text-dark-200 hover:text-primary-300 transition">Contato</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button
+                    class="bg-primary-600 hover:bg-primary-500 text-white px-4 py-2 rounded-full font-medium transition">
+                    Entrar
+                </button>
+                <button class="md:hidden text-dark-200" id="mobile-menu-button">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Mobile (visível apenas em telas pequenas) -->
+    <nav id="mobile-menu" class="md:hidden hidden mt-4 flex justify-between bg-dark-800 rounded-lg px-4 py-2 shadow-md">
+        <a href="./index.html" class="text-dark-200 text-sm font-medium hover:text-primary-300">Início</a>
+        <a href="./explorar.html" class="text-dark-200 text-sm font-medium hover:text-primary-300">Explorar</a>
+        <a href="#" class="text-dark-200 text-sm font-medium hover:text-primary-300">Biblioteca</a>
+        <a href="#" class="text-primary-300 text-sm font-medium hover:text-primary-400">Premium</a>
+        <a href="./contato.html" class="text-dark-200 text-sm font-medium hover:text-primary-300">Contato</a>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="mb-16">
+            <div class="bg-gradient-to-r from-dark-800 to-dark-900 rounded-2xl p-8 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">App Melodia Premium</h2>
+                <p class="text-dark-300 text-lg mb-6 max-w-2xl mx-auto">
+                    Desbloqueie todo o potencial da sua experiência musical com qualidade superior, sem anúncios e muitos outros benefícios.
+                </p>
+                <div class="flex justify-center gap-4">
+                    <button
+                        class="bg-primary-600 hover:bg-primary-500 text-white px-6 py-3 rounded-full font-medium transition">
+                        Experimente 1 mês grátis
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefícios -->
+        <section class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 text-center">Por que ser Premium?</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Benefício 1 -->
+                <div class="bg-dark-800 p-6 rounded-xl border border-dark-700">
+                    <div class="w-12 h-12 bg-primary-900 bg-opacity-30 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-music text-primary-400 text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Música sem anúncios</h4>
+                    <p class="text-dark-300">Curta sua música sem interrupções, sem anúncios entre as faixas.</p>
+                </div>
+                
+                <!-- Benefício 2 -->
+                <div class="bg-dark-800 p-6 rounded-xl border border-dark-700">
+                    <div class="w-12 h-12 bg-primary-900 bg-opacity-30 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-headphones text-primary-400 text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Qualidade superior</h4>
+                    <p class="text-dark-300">Ouça em alta qualidade (320 Kbps) em todos os seus dispositivos.</p>
+                </div>
+                
+                <!-- Benefício 3 -->
+                <div class="bg-dark-800 p-6 rounded-xl border border-dark-700">
+                    <div class="w-12 h-12 bg-primary-900 bg-opacity-30 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-primary-400 text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Modo offline</h4>
+                    <p class="text-dark-300">Baixe suas músicas e ouça mesmo sem conexão com a internet.</p>
+                </div>
+                
+                <!-- Benefício 4 -->
+                <div class="bg-dark-800 p-6 rounded-xl border border-dark-700">
+                    <div class="w-12 h-12 bg-primary-900 bg-opacity-30 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-primary-400 text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Pule ilimitado</h4>
+                    <p class="text-dark-300">Pule quantas faixas quiser, quando quiser, sem limites.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planos -->
+        <section class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 text-center">Escolha seu plano Premium</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Plano Individual -->
+                <div class="bg-dark-800 rounded-xl p-6 border border-primary-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-primary-500 text-white px-4 py-1 text-xs font-bold rounded-bl-lg">
+                        MAIS POPULAR
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Individual</h4>
+                    <p class="text-dark-300 mb-4">Para quem quer curtir música sem anúncios e no modo offline.</p>
+                    
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold">R$ 19,90</span>
+                        <span class="text-dark-400">/mês</span>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-400 mt-1 mr-2"></i>
+                            <span>Ouça música sem anúncios</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-400 mt-1 mr-2"></i>
+                            <span>Ouça em qualquer lugar — até offline</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-400 mt-1 mr-2"></i>
+                            <span>Escolha a música que quer ouvir</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-400 mt-1 mr-2"></i>
+                            <span>Qualidade de som superior</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-primary-600 hover:bg-primary-500 text-white py-3 rounded-full font-medium transition">
+                        Começar
+                    </button>
+                    
+                    <p class="text-xs text-dark-400 mt-4 text-center">
+                        <a href="#" class="underline">Termos e condições</a> aplicáveis. 1 mês grátis não disponível para usuários que já experimentaram o Premium.
+                    </p>
+                </div>
+                
+                <!-- Plano Duo -->
+                <div class="bg-dark-800 rounded-xl p-6 border border-dark-700">
+                    <h4 class="text-xl font-bold mb-2">Duo</h4>
+                    <p class="text-dark-300 mb-4">Para casais que moram juntos e querem curtir música juntos.</p>
+                    
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold">R$ 24,90</span>
+                        <span class="text-dark-400">/mês</span>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-400 mt-1 mr-2"></i>
+                            <span>2 contas Premium para quem mora junto</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-400 mt-1 mr-2"></i>
+                            <span>Música sem anúncios, no modo offline e sob demanda</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-400 mt-1 mr-2"></i>
+                            <span>Playlists Duo para vocês descobrirem juntos</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-dark-700 hover:bg-dark-600 text-white py-3 rounded-full font-medium transition">
+                        Começar
+                    </button>
+                    
+                    <p class="text-xs text-dark-400 mt-4 text-center">
+                        <a href="#" class="underline">Termos e condições</a> aplicáveis. 1 mês grátis não disponível para usuários que já experimentaram o Premium.
+                    </p>
+                </div>
+                
+                <!-- Plano Família -->
+                <div class="bg-dark-800 rounded-xl p-6 border border-dark-700">
+                    <h4 class="text-xl font-bold mb-2">Família</h4>
+                    <p class="text-dark-300 mb-4">Para famílias que querem curtir música juntas.</p>
+                    
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold">R$ 34,90</span>
+                        <span class="text-dark-400">/mês</span>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-400 mt-1 mr-2"></i>
+                            <span>Até 6 contas Premium para familiares que moram no mesmo endereço</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-400 mt-1 mr-2"></i>
+                            <span>Bloqueie músicas com conteúdo explícito</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-400 mt-1 mr-2"></i>
+                            <span>Música sem anúncios, no modo offline e sob demanda</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-400 mt-1 mr-2"></i>
+                            <span>App Melodia Kids: música especialmente para crianças</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-dark-700 hover:bg-dark-600 text-white py-3 rounded-full font-medium transition">
+                        Começar
+                    </button>
+                    
+                    <p class="text-xs text-dark-400 mt-4 text-center">
+                        <a href="#" class="underline">Termos e condições</a> aplicáveis. 1 mês grátis não disponível para usuários que já experimentaram o Premium.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabela -->
+        <section class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 text-center">Compare os planos</h3>
+            
+            <div class="bg-dark-800 rounded-xl overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b border-dark-700">
+                                <th class="text-left py-4 px-6 font-medium">Recursos</th>
+                                <th class="text-center py-4 px-6 font-medium">Grátis</th>
+                                <th class="text-center py-4 px-6 font-medium text-primary-400">Premium</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-dark-700">
+                                <td class="py-4 px-6">Qualidade de áudio</td>
+                                <td class="py-4 px-6 text-center">128 Kbps</td>
+                                <td class="py-4 px-6 text-center text-primary-400 font-medium">320 Kbps</td>
+                            </tr>
+                            <tr class="border-b border-dark-700">
+                                <td class="py-4 px-6">Anúncios</td>
+                                <td class="py-4 px-6 text-center"><i class="fas fa-times text-red-400"></i></td>
+                                <td class="py-4 px-6 text-center text-primary-400"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr class="border-b border-dark-700">
+                                <td class="py-4 px-6">Modo offline</td>
+                                <td class="py-4 px-6 text-center"><i class="fas fa-times text-red-400"></i></td>
+                                <td class="py-4 px-6 text-center text-primary-400"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr class="border-b border-dark-700">
+                                <td class="py-4 px-6">Escolha qualquer música</td>
+                                <td class="py-4 px-6 text-center"><i class="fas fa-times text-red-400"></i></td>
+                                <td class="py-4 px-6 text-center text-primary-400"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr class="border-b border-dark-700">
+                                <td class="py-4 px-6">Pular faixas ilimitado</td>
+                                <td class="py-4 px-6 text-center">Limitado</td>
+                                <td class="py-4 px-6 text-center text-primary-400"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-6">Contas simultâneas</td>
+                                <td class="py-4 px-6 text-center">1</td>
+                                <td class="py-4 px-6 text-center text-primary-400">Até 6 (dependendo do plano)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 text-center">Perguntas frequentes</h3>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- Pergunta 1 -->
+                <div class="bg-dark-800 rounded-xl p-6">
+                    <button class="faq-toggle w-full flex justify-between items-center text-left">
+                        <h4 class="font-medium">Como funciona o período de teste gratuito?</h4>
+                        <i class="fas fa-chevron-down text-primary-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden text-dark-300">
+                        <p>Você pode experimentar o App Melodia Premium gratuitamente por 1 mês. Após esse período, sua assinatura será renovada automaticamente no plano escolhido, a menos que você cancele antes do término do período de teste.</p>
+                    </div>
+                </div>
+                
+                <!-- Pergunta 2 -->
+                <div class="bg-dark-800 rounded-xl p-6">
+                    <button class="faq-toggle w-full flex justify-between items-center text-left">
+                        <h4 class="font-medium">Como faço para cancelar minha assinatura?</h4>
+                        <i class="fas fa-chevron-down text-primary-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden text-dark-300">
+                        <p>Você pode cancelar a qualquer momento em Configurações > Assinatura no aplicativo ou através do seu provedor de pagamento (Google Play, App Store, etc.). Se você cancelar durante o período de teste, não será cobrado.</p>
+                    </div>
+                </div>
+                
+                <!-- Pergunta 3 -->
+                <div class="bg-dark-800 rounded-xl p-6">
+                    <button class="faq-toggle w-full flex justify-between items-center text-left">
+                        <h4 class="font-medium">Posso mudar de plano depois?</h4>
+                        <i class="fas fa-chevron-down text-primary-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden text-dark-300">
+                        <p>Sim, você pode mudar para outro plano Premium a qualquer momento. A mudança será efetivada no início do próximo ciclo de cobrança.</p>
+                    </div>
+                </div>
+                
+                <!-- Pergunta 4 -->
+                <div class="bg-dark-800 rounded-xl p-6">
+                    <button class="faq-toggle w-full flex justify-between items-center text-left">
+                        <h4 class="font-medium">Quais métodos de pagamento são aceitos?</h4>
+                        <i class="fas fa-chevron-down text-primary-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden text-dark-300">
+                        <p>Aceitamos cartões de crédito (Visa, Mastercard, American Express, Elo, Hipercard), PayPal e pagamentos via Google Play ou App Store, dependendo da plataforma.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <h3 class="text-2xl font-bold mb-4">Pronto para melhorar sua experiência musical?</h3>
+            <p class="text-dark-300 mb-6 max-w-2xl mx-auto">Escolha o plano Premium que melhor se adapta ao seu estilo e comece a ouvir música como nunca antes.</p>
+            <button class="bg-primary-600 hover:bg-primary-500 text-white px-8 py-3 rounded-full font-medium transition">
+                Experimente 1 mês grátis
+            </button>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark-900 text-dark-400 py-12 mt-12 px-4 sm:px-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="./src/assets/mkttlogo.png" class="fas h-10 w-10 text-primary-400 text-2xl"></img>
+                        <h2 class="text-2xl font-bold gradient-text">App Melodia</h2>
+                    </div>
+                    <p class="mb-4">Sua música, sua forma. Descubra, ouça e compartilhe suas músicas favoritas.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-4">Empresa</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-primary-400 transition">Sobre</a></li>
+                        <li><a href="./contato.html" class="hover:text-primary-400 transition">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-bold mb-4">Planos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-primary-400 transition">Premium Individual</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition">Premium Duo</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition">Premium Família</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-bold mb-4">Suporte</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-primary-400 transition">Central de Ajuda</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition">Termos de Uso</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-dark-800 mt-8 pt-8 text-sm">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="flex space-x-4 mb-4 md:mb-0">
+                        <a href="#" class="hover:text-primary-400">Legal</a>
+                        <a href="#" class="hover:text-primary-400">Centro de Privacidade</a>
+                        <a href="#" class="hover:text-primary-400">Política de Privacidade</a>
+                        <a href="#" class="hover:text-primary-400">Cookies</a>
+                    </div>
+                    <div>
+                        <p>© 2025 App Melodia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./src/scripts/premium.js"></script>
+</body>
+
+</html>

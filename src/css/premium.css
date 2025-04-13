@@ -1,0 +1,41 @@
+.faq-toggle i {
+    transition: transform 0.3s ease;
+}
+
+.faq-toggle i.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.border-primary-500 {
+    border-color: #6a3ce8;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: left;
+}
+
+th {
+    background-color: #1a1a1a;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(106, 60, 232, 0.05);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .plan-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    table {
+        display: block;
+        overflow-x: visible;
+    }
+}

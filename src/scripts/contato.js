@@ -23,3 +23,15 @@ document.getElementById('contactForm').addEventListener('submit', function(send)
         formMessage.classList.add('hidden');
     }, 5000);
 });
+
+function redirectHome() {
+    window.location.href = "./index.html";
+}
+
+// Menu Mobile toggle
+const menuBtn = document.querySelector('.fa-bars');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
