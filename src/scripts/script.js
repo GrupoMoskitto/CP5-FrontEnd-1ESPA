@@ -67,3 +67,11 @@ volumeContainer.addEventListener('click', (e) => {
 function redirectHome() {
     window.location.href = "./index.html";
 }
+
+// Menu Mobile toggle
+const menuBtn = document.querySelector('.fa-bars');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
