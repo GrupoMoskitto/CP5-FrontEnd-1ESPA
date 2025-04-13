@@ -23,17 +23,25 @@
 
 ## 📌 Sobre o Projeto
 
-O **App Melodia** é um projeto front-end desenvolvido para praticar principalmente o uso do Tailwind CSS, criando uma landing page moderna para um player de música fictício. O slogan oficial é:  
-*"Sua música, sua forma. Descubra, ouça e compartilhe suas músicas favoritas."*
+O **App Melodia** é um projeto front-end desenvolvido para praticar principalmente o uso do framework Tailwind CSS, criando uma landing page moderna para um player de música fictício.
+
+O slogan oficial é: *"Sua música, sua forma. Descubra, ouça e compartilhe suas músicas favoritas."*
+
+## 🌐 Acessar a Página Online
+**Disponível via GitHub Pages:** https://GrupoMoskitto.github.io/CP5-FrontEnd-1ESPA
 
 ## ✨ Funcionalidades Implementadas
 
 - **Player de Música Interativo**  
-  - Controles de play/pause, próximo/anterior e barra de progresso
+  - Controles de play/pause, próximo/anterior, shuffle/repeat, favoritar a música e barra de progresso
   - Visualização da capa do álbum e informações da faixa
 
-- **Seção de melhores álbuns**
-  - Seções com álbuns mais ouvidos pelo usuário
+- **Design Responsivo**
+  - Design e funcionalidades compatíveis com dispositivos de todos os tamanhos
+  - Barras de Navegação adaptadas para cada formato de dispositivo
+
+- **Seção de Recomendações de Músicas**
+  - Seções com os álbuns recomendados mais ouvidos pelos usuários
   - Seções de músicas mais ouvidas do momento
 
 - **Seção de Depoimentos**  
@@ -43,7 +51,7 @@ O **App Melodia** é um projeto front-end desenvolvido para praticar principalme
 - **Página de Contato**  
   - Formulário responsivo
 
-## 🛠 Tecnologias Utilizadas
+## 🛠 Tecnologias e Ferramentas Utilizadas
 
 | Tecnologia         | Uso                              |
 |--------------------|----------------------------------|
@@ -51,10 +59,11 @@ O **App Melodia** é um projeto front-end desenvolvido para praticar principalme
 | **[Tailwind CSS](https://tailwindcss.com/)**   | Estilização completa e responsiva|
 | **[JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**   | Interatividade a página |
 | **[Font Awesome](https://fontawesome.com/)**   | Ícones intuitivos                |
+| **[Discogs](https://www.discogs.com/pt_BR/)**   | Banco de Dados das Capas de Álbum                |
 
 ## 🧑‍🎨 Design
 
-- **Cores**: Gradiente vibrante (roxo/azul) + preto/branco
+- **Cores**: Gradiente vibrante (roxo/azul) + preto/branco (com gradientes)
 - **Layout**: Clean e moderno, com espaçamento equilibrado
 
 ## 🚀 Como Executar Localmente
@@ -62,9 +71,4 @@ O **App Melodia** é um projeto front-end desenvolvido para praticar principalme
 1. Clone o repositório:
    ```bash
    git clone https://github.com/GrupoMoskitto/CP5-FrontEnd-1ESPA.git
-   
 2. Abra o arquivo ```index.html``` no navegador.
-
-## 🌐 Acesso Online
-Disponível via GitHub Pages:
-👉 https://GrupoMoskitto.github.io/CP5-FrontEnd-1ESPA
