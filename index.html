@@ -383,32 +383,32 @@
             </div>
 
             <div class="bg-dark-800 rounded-xl overflow-x-auto shadow-lg">
-                <!-- Tabela -->
+                <!-- Cabeçalho da tabela -->
                 <div
-                    class="grid grid-cols-12 gap-4 px-6 py-3 border-b border-dark-700 text-dark-400 text-sm font-medium">
+                    class="grid grid-cols-12 text-xs sm:text-sm gap-2 sm:gap-4 px-4 sm:px-6 py-3 border-b border-dark-700 text-dark-400 font-medium">
                     <div class="col-span-1">#</div>
-                    <div class="col-span-5 md:col-span-6">TÍTULO</div>
-                    <div class="col-span-4 md:col-span-3">ÁLBUM</div>
-                    <div class="col-span-1 md:col-span-1">DURAÇÃO</div>
+                    <div class="col-span-6 sm:col-span-5">TÍTULO</div>
+                    <div class="hidden sm:block col-span-3">ÁLBUM</div>
+                    <div class="col-span-5 sm:col-span-3 text-right">DURAÇÃO</div>
                 </div>
-                
+
                 <!-- Lista de músicas -->
-                <div class="divide-y divide-dark-700">
+                <div class="divide-y divide-dark-700 text-sm">
                     <!-- Música 1 -->
                     <div
-                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer col-span-5 sm:col-span-6">
+                        class="song-item grid grid-cols-12 gap-2 sm:gap-4 px-4 sm:px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
                         <div class="col-span-1 text-dark-400">1</div>
-                        <div class="col-span-5 md:col-span-6 flex items-center">
+                        <div class="col-span-6 sm:col-span-5 flex items-center overflow-hidden">
                             <img src="https://i.discogs.com/aYZdMs0-RQC5EYNVMA99NtmIGBurPWwgLGiMg6PDkKI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MDk5/MDg4LTE1ODY2NjU5/MzEtMjk4OS5qcGVn.jpeg"
                                 alt=".5: The Gray Chapter" class="w-10 h-10 mr-3 rounded">
-                            <div>
-                                <p class="font-medium text-white">The Negative One</p>
-                                <p class="text-sm text-dark-400">Slipknot</p>
+                            <div class="truncate">
+                                <p class="font-medium text-white truncate">The Negative One</p>
+                                <p class="text-xs text-dark-400 truncate">Slipknot</p>
                             </div>
                         </div>
-                        <div class="col-span-4 md:col-span-3 text-dark-400">.5: The Gray Chapter</div>
-                        <div class="col-span-2 md:col-span-2 flex justify-between items-center">
-                            <span class="text-dark-400">5:25</span>
+                        <div class="hidden sm:block col-span-3 text-dark-400 truncate">.5: The Gray Chapter</div>
+                        <div class="col-span-5 sm:col-span-3 flex justify-end space-x-2 text-dark-400">
+                            <span>5:25</span>
                             <button class="text-primary-400 hover:text-primary-300">
                                 <i class="fas fa-ellipsis-h"></i>
                             </button>
@@ -417,19 +417,19 @@
 
                     <!-- Música 2 -->
                     <div
-                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer col-span-5 sm:col-span-6">
+                        class="song-item grid grid-cols-12 gap-2 sm:gap-4 px-4 sm:px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
                         <div class="col-span-1 text-dark-400">2</div>
-                        <div class="col-span-5 md:col-span-6 flex items-center">
+                        <div class="col-span-6 sm:col-span-5 flex items-center overflow-hidden">
                             <img src="https://i.discogs.com/JZbgQ_R55wElLnyUtCk0igyw_e3pd2M9tjBfovk0lK0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NTI0/ODItMTczOTk4NDQ3/My00MTk0LmpwZWc.jpeg"
                                 alt="Brand New Eyes" class="w-10 h-10 mr-3 rounded">
-                            <div>
-                                <p class="font-medium text-white">Ignorance</p>
-                                <p class="text-sm text-dark-400">Paramore</p>
+                            <div class="truncate">
+                                <p class="font-medium text-white truncate">Ignorance</p>
+                                <p class="text-xs text-dark-400 truncate">Paramore</p>
                             </div>
                         </div>
-                        <div class="col-span-4 md:col-span-3 text-dark-400">Brand New Eyes</div>
-                        <div class="col-span-2 md:col-span-2 flex justify-between items-center">
-                            <span class="text-dark-400">3:38</span>
+                        <div class="hidden sm:block col-span-3 text-dark-400 truncate">Brand New Eyes</div>
+                        <div class="col-span-5 sm:col-span-3 flex justify-end space-x-2 text-dark-400">
+                            <span>3:38</span>
                             <button class="text-primary-400 hover:text-primary-300">
                                 <i class="fas fa-ellipsis-h"></i>
                             </button>
@@ -438,19 +438,19 @@
 
                     <!-- Música 3 -->
                     <div
-                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer col-span-5 sm:col-span-6">
+                        class="song-item grid grid-cols-12 gap-2 sm:gap-4 px-4 sm:px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
                         <div class="col-span-1 text-dark-400">3</div>
-                        <div class="col-span-5 md:col-span-6 flex items-center">
+                        <div class="col-span-6 sm:col-span-5 flex items-center overflow-hidden">
                             <img src="https://i.discogs.com/ULHB14c6s0TXKePb8kG9M9s7n58_fl8N0CvZZh9bnfc/rs:fit/g:sm/q:90/h:560/w:560/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODk3/MzQzLTE1MDYzMjUx/NTgtNDUwOC5qcGVn.jpeg"
                                 alt="Seated With Liquor" class="w-10 h-10 mr-3 rounded">
-                            <div>
-                                <p class="font-medium text-white">When Innocence is Just a Mask</p>
-                                <p class="text-sm text-dark-400">Foreground Eclipse & Draw The Emotional</p>
+                            <div class="truncate">
+                                <p class="font-medium text-white truncate">When Innocence is Just a Mask</p>
+                                <p class="text-xs text-dark-400 truncate">Foreground Eclipse & Draw The Emotional</p>
                             </div>
                         </div>
-                        <div class="col-span-4 md:col-span-3 text-dark-400">Seated With Liquor</div>
-                        <div class="col-span-2 md:col-span-2 flex justify-between items-center">
-                            <span class="text-dark-400">3:53</span>
+                        <div class="hidden sm:block col-span-3 text-dark-400 truncate">Seated With Liquor</div>
+                        <div class="col-span-5 sm:col-span-3 flex justify-end space-x-2 text-dark-400">
+                            <span>3:53</span>
                             <button class="text-primary-400 hover:text-primary-300">
                                 <i class="fas fa-ellipsis-h"></i>
                             </button>
@@ -459,19 +459,19 @@
 
                     <!-- Música 4 -->
                     <div
-                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer col-span-5 sm:col-span-6">
+                        class="song-item grid grid-cols-12 gap-2 sm:gap-4 px-4 sm:px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
                         <div class="col-span-1 text-dark-400">4</div>
-                        <div class="col-span-5 md:col-span-6 flex items-center">
+                        <div class="col-span-6 sm:col-span-5 flex items-center overflow-hidden">
                             <img src="https://i.discogs.com/ZsL3D18iyCbpILm0JeqfBLx0kQ0fnX34gZHfhpCJkUE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4ODI4/MzIyLTE3MDA4NjY0/MDQtMTU3OC5qcGVn.jpeg"
                                 alt="Sour" class="w-10 h-10 mr-3 rounded">
-                            <div>
-                                <p class="font-medium text-white">good 4 u</p>
-                                <p class="text-sm text-dark-400">Olivia Rodrigo</p>
+                            <div class="truncate">
+                                <p class="font-medium text-white truncate">good 4 u</p>
+                                <p class="text-xs text-dark-400 truncate">Olivia Rodrigo</p>
                             </div>
                         </div>
-                        <div class="col-span-4 md:col-span-3 text-dark-400">Sour</div>
-                        <div class="col-span-2 md:col-span-2 flex justify-between items-center">
-                            <span class="text-dark-400">2:58</span>
+                        <div class="hidden sm:block col-span-3 text-dark-400 truncate">Sour</div>
+                        <div class="col-span-5 sm:col-span-3 flex justify-end space-x-2 text-dark-400">
+                            <span>2:58</span>
                             <button class="text-primary-400 hover:text-primary-300">
                                 <i class="fas fa-ellipsis-h"></i>
                             </button>
@@ -480,19 +480,19 @@
 
                     <!-- Música 5 -->
                     <div
-                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer col-span-5 sm:col-span-6">
+                        class="song-item grid grid-cols-12 gap-2 sm:gap-4 px-4 sm:px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
                         <div class="col-span-1 text-dark-400">5</div>
-                        <div class="col-span-5 md:col-span-6 flex items-center">
+                        <div class="col-span-6 sm:col-span-5 flex items-center overflow-hidden">
                             <img src="https://i.discogs.com/HdY1UmUItuXBfERjc2rZgqriZR_gu09Dw8daLeg6i04/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NTY4/MjEtMTM2NTM3NDA1/Mi0yOTMwLmpwZWc.jpeg"
                                 alt="Paramore" class="w-10 h-10 mr-3 rounded">
-                            <div>
-                                <p class="font-medium text-white">Still Into You</p>
-                                <p class="text-sm text-dark-400">Paramore</p>
+                            <div class="truncate">
+                                <p class="font-medium text-white truncate">Still Into You</p>
+                                <p class="text-xs text-dark-400 truncate">Paramore</p>
                             </div>
                         </div>
-                        <div class="col-span-4 md:col-span-3 text-dark-400">Paramore</div>
-                        <div class="col-span-2 md:col-span-2 flex justify-between items-center">
-                            <span class="text-dark-400">3:36</span>
+                        <div class="hidden sm:block col-span-3 text-dark-400 truncate">Paramore</div>
+                        <div class="col-span-5 sm:col-span-3 flex justify-end space-x-2 text-dark-400">
+                            <span>3:36</span>
                             <button class="text-primary-400 hover:text-primary-300">
                                 <i class="fas fa-ellipsis-h"></i>
                             </button>
@@ -501,231 +501,247 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <!-- Depoimentos de Satisfação -->
-    <section class="mt-12 mb-12 container mx-auto px-4">
-        <div class="flex justify-between items-center mb-6">
-            <h3 class="text-2xl font-bold">O que nossos usuários dizem</h3>
-            <a href="#" class="text-primary-400 hover:text-primary-300 text-sm font-medium">Ver todos</a>
-        </div>
 
-        <!-- Conteiner do Carrossel -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <!-- Depoimento 1 -->
-                <div class="swiper-slide">
-                    <div class="bg-dark-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-                        <p class="text-dark-300 italic mb-4">"O App Melodia transformou a forma como ouço música. As
-                            recomendações são incríveis e a qualidade do som é imbatível!"</p>
-                        <div class="flex items-center space-x-4">
-                            <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                                <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-white">Ana Luiza</p>
-                                <p class="text-sm text-dark-400">Usuário Premium</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Depoimento 2 -->
-                <div class="swiper-slide">
-                    <div class="bg-dark-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-                        <p class="text-dark-300 italic mb-4">"Adoro a interface intuitiva e as playlists personalizadas,
-                            recomendo para todos os tipos de usúarios. Melhor app de música que já usei!"</p>
-                        <div class="flex items-center space-x-4">
-                            <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                                <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-white">João Matos</p>
-                                <p class="text-sm text-dark-400">Usuário Regular</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Depoimento 3 -->
-                <div class="swiper-slide">
-                    <div class="bg-dark-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-                        <p class="text-dark-300 italic mb-4">"Desde que comecei a usar o App Melodia, não consigo parar
-                            de descobrir novas músicas. Fantástico!"</p>
-                        <div class="flex items-center space-x-4">
-                            <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                                <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-white">Gabriel Kato</p>
-                                <p class="text-sm text-dark-400">Usuário Premium</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Depoimento 4 -->
-                <div class="swiper-slide">
-                    <div class="bg-dark-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-                        <p class="text-dark-300 italic mb-4">"Aplicativo muito bonito e rápido, consigo ouvir minhas
-                            músicas em qualquer lugar! Simplesmente amei!"</p>
-                        <div class="flex items-center space-x-4">
-                            <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                                <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-white">Gabriel Couto</p>
-                                <p class="text-sm text-dark-400">Usuário Premium</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Depoimentos de Satisfação -->
+        <section class="mt-12 mb-12 container mx-auto px-4">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">O que nossos usuários dizem:</h3>
+                <a href="#" class="text-primary-400 hover:text-primary-300 text-sm font-medium">Ver todos</a>
             </div>
 
-            <!-- Botões de Navegação -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- Paginação -->
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-    <!-- Player de Música -->
-    <div class="music-player fixed bottom-0 left-0 right-0 bg-dark-800 border-t border-dark-700 shadow-lg">
-        <div class="container mx-auto">
-            <!-- Barra de progresso -->
-            <div class="progress-bar mb-2 rounded-full">
-                <div class="progress-fill rounded-full flex items-center space-x-4 sm:w-1/3 w-full justify-center sm:justify-start"></div>
-            </div>
-
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0 px-4 py-2">
-                <!-- Informações da música -->
-                <div class="flex items-center space-x-4 sm:w-1/3 w-full justify-center sm:justify-start">
-                    <img src="https://i.discogs.com/DsAFhV8xI3QmBnQP21VZFDdWd6PFVKPvJdrz3pZ1iBg/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTYw/NDctMTIyNTQxNTIy/OS5qcGVn.jpeg"
-                        alt="Riot!" class="w-12 h-12 rounded">
-                    <div>
-                        <p class="font-medium text-white">Misery Business</p>
-                        <p class="text-sm text-dark-400">Paramore</p>
+            <!-- Conteiner do Carrossel -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Depoimento 1 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-dark-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <p class="text-dark-300 italic mb-4">"O App Melodia transformou a forma como ouço música. As
+                                recomendações são incríveis e a qualidade do som é imbatível!"</p>
+                            <div class="flex items-center space-x-4">
+                                <div
+                                    class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                                    <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-white">Ana Luiza</p>
+                                    <p class="text-sm text-dark-400">Usuário Premium</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <button class="text-dark-400 hover:text-white">
-                        <i class="far fa-heart"></i>
-                    </button>
+
+                    <!-- Depoimento 2 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-dark-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <p class="text-dark-300 italic mb-4">"Adoro a interface intuitiva e as playlists
+                                personalizadas,
+                                recomendo para todos os tipos de usúarios. Melhor app de música que já usei!"</p>
+                            <div class="flex items-center space-x-4">
+                                <div
+                                    class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                                    <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-white">João Matos</p>
+                                    <p class="text-sm text-dark-400">Usuário Regular</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 3 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-dark-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <p class="text-dark-300 italic mb-4">"Desde que comecei a usar o App Melodia, não consigo
+                                parar
+                                de descobrir novas músicas. Fantástico!"</p>
+                            <div class="flex items-center space-x-4">
+                                <div
+                                    class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                                    <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-white">Gabriel Kato</p>
+                                    <p class="text-sm text-dark-400">Usuário Premium</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 4 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-dark-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <p class="text-dark-300 italic mb-4">"Aplicativo muito bonito e rápido, consigo ouvir minhas
+                                músicas em qualquer lugar! Simplesmente amei!"</p>
+                            <div class="flex items-center space-x-4">
+                                <div
+                                    class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                                    <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-white">Gabriel Couto</p>
+                                    <p class="text-sm text-dark-400">Usuário Premium</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Controles do player -->
-                <div class="flex items-center justify-center space-x-6">
-                    <button class="text-dark-400 hover:text-white">
-                        <i class="fas fa-random"></i>
-                    </button>
-                    <button class="text-dark-400 hover:text-white">
-                        <i class="fas fa-step-backward"></i>
-                    </button>
-                    <button
-                        class="play-btn player-controls bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
-                        <i class="fas fa-play"></i>
-                    </button>
-                    <button class="text-dark-400 hover:text-white">
-                        <i class="fas fa-step-forward"></i>
-                    </button>
-                    <button class="text-dark-400 hover:text-white">
-                        <i class="fas fa-redo"></i>
-                    </button>
+                <!-- Botões de Navegação -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- Paginação -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Player de Música -->
+        <div class="music-player fixed bottom-0 left-0 right-0 bg-dark-800 border-t border-dark-700 shadow-lg">
+            <div class="container mx-auto">
+                <!-- Barra de progresso -->
+                <div class="progress-bar mb-2 rounded-full">
+                    <div
+                        class="progress-fill rounded-full flex items-center space-x-4 sm:w-1/3 w-full justify-center sm:justify-start">
+                    </div>
                 </div>
 
-                <!-- Controles de volume e outros -->
-                <div class="flex items-center space-x-4 sm:w-1/3 w-full justify-center sm:justify-start">
-                    <button class="text-dark-400 hover:text-white">
-                        <i class="fas fa-list-ul"></i>
-                    </button>
-                    <button class="text-dark-400 hover:text-white">
-                        <i class="fas fa-laptop"></i>
-                    </button>
-                    <!-- Controle de Volume Visual (arrastável mas não funcional) -->
-                    <div class="flex items-center volume-control">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0 px-4 py-2">
+                    <!-- Informações da música -->
+                    <div class="flex items-center space-x-4 sm:w-1/3 w-full justify-center sm:justify-start">
+                        <img src="https://i.discogs.com/DsAFhV8xI3QmBnQP21VZFDdWd6PFVKPvJdrz3pZ1iBg/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTYw/NDctMTIyNTQxNTIy/OS5qcGVn.jpeg"
+                            alt="Riot!" class="w-12 h-12 rounded">
+                        <div>
+                            <p class="font-medium text-white">Misery Business</p>
+                            <p class="text-sm text-dark-400">Paramore</p>
+                        </div>
                         <button class="text-dark-400 hover:text-white">
-                            <i class="fas fa-volume-up text-lg"></i>
+                            <i class="far fa-heart"></i>
                         </button>
-                        <div class="volume-slider-container ml-2">
-                            <div class="w-24 h-1 bg-dark-600 rounded-full relative">
-                                <div class="volume-slider h-full rounded-full" style="width: 75%"></div>
-                                <div class="volume-dot absolute top-1/2 transform -translate-y-1/2 w-3 h-3 bg-white rounded-full cursor-grab active:cursor-grabbing"
-                                    style="left: 72%"></div>
+                    </div>
+
+                    <!-- Controles do player -->
+                    <div class="flex items-center justify-center space-x-6">
+                        <button class="text-dark-400 hover:text-white">
+                            <i class="fas fa-random"></i>
+                        </button>
+                        <button class="text-dark-400 hover:text-white">
+                            <i class="fas fa-step-backward"></i>
+                        </button>
+                        <button
+                            class="play-btn player-controls bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="text-dark-400 hover:text-white">
+                            <i class="fas fa-step-forward"></i>
+                        </button>
+                        <button class="text-dark-400 hover:text-white">
+                            <i class="fas fa-redo"></i>
+                        </button>
+                    </div>
+
+                    <!-- Controles de volume e outros -->
+                    <div class="flex items-center space-x-4 lg:justify-end sm:w-1/3 sm:justify-center">
+                        <button class="text-dark-400 hover:text-white">
+                            <i class="fas fa-list-ul"></i>
+                        </button>
+                        <button class="text-dark-400 hover:text-white">
+                            <i class="fas fa-laptop"></i>
+                        </button>
+                        <!-- Controle de Volume Visual (arrastável mas não funcional) -->
+                        <div class="flex items-center volume-control">
+                            <button class="text-dark-400 hover:text-white">
+                                <i class="fas fa-volume-up text-lg"></i>
+                            </button>
+                            <div class="volume-slider-container ml-2">
+                                <div class="w-24 h-1 bg-dark-600 rounded-full relative">
+                                    <div class="volume-slider h-full rounded-full" style="width: 75%"></div>
+                                    <div class="volume-dot absolute top-1/2 transform -translate-y-1/2 w-3 h-3 bg-white rounded-full cursor-grab active:cursor-grabbing"
+                                        style="left: 72%"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Rodapé -->
-    <footer class="bg-dark-900 text-dark-400 py-12 mt-12 px-4 sm:px-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <img src="./src/assets/mkttlogo.png" class="fas h-10 w-10 text-primary-400 text-2xl"></img>
-                        <h2 class="text-2xl font-bold gradient-text">App Melodia</h2>
-                    </div>
-                    <p class="mb-4">Sua música, sua forma. Descubra, ouça e compartilhe suas músicas favoritas.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
-                                class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
-                                class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
-                                class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-white font-bold mb-4">Empresa</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-primary-400 transition">Sobre</a></li>
-                        <li><a href="./contato.html" class="hover:text-primary-400 transition">Contato</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="border-t border-dark-800 mt-8 pt-8 text-sm">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <div class="flex space-x-4 mb-4 md:mb-0">
-                        <a href="#" class="hover:text-primary-400">Legal</a>
-                        <a href="#" class="hover:text-primary-400">Centro de Privacidade</a>
-                        <a href="#" class="hover:text-primary-400">Política de Privacidade</a>
-                        <a href="#" class="hover:text-primary-400">Cookies</a>
-                    </div>
+        <!-- Rodapé -->
+        <footer class="bg-dark-900 text-dark-400 py-12 mt-12 px-4 sm:px-8">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>
-                        <p>© 2025 App Melodia</p>
+                        <div class="flex items-center space-x-2 mb-4">
+                            <img src="./src/assets/mkttlogo.png" class="fas h-10 w-10 text-primary-400 text-2xl"></img>
+                            <h2 class="text-2xl font-bold gradient-text">App Melodia</h2>
+                        </div>
+                        <p class="mb-4">Sua música, sua forma. Descubra, ouça e compartilhe suas músicas favoritas.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                    class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-white font-bold mb-4">Empresa</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-primary-400 transition">Sobre</a></li>
+                            <li><a href="./contato.html" class="hover:text-primary-400 transition">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-dark-800 mt-8 pt-8 text-sm">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <div class="flex space-x-4 mb-4 md:mb-0">
+                            <a href="#" class="hover:text-primary-400">Legal</a>
+                            <a href="#" class="hover:text-primary-400">Centro de Privacidade</a>
+                            <a href="#" class="hover:text-primary-400">Política de Privacidade</a>
+                            <a href="#" class="hover:text-primary-400">Cookies</a>
+                        </div>
+                        <div>
+                            <p>© 2025 App Melodia</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./src/scripts/carrossel.js"></script>
-    <script src="./src/scripts/script.js"></script>
+        <!-- Scripts -->
+        <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+        <script src="./src/scripts/carrossel.js"></script>
+        <script src="./src/scripts/script.js"></script>
 </body>
 
 </html>
