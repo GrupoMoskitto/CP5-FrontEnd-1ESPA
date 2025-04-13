@@ -70,6 +70,16 @@
         </div>
     </header>
 
+    <!-- Menu Mobile (visível apenas em telas pequenas) -->
+    <nav id="mobile-menu" class="md:hidden hidden mt-4 flex justify-between bg-dark-800 rounded-lg px-4 py-2 shadow-md">
+        <a href="./index.html" class="text-primary-300 text-sm font-medium hover:text-primary-400">Início</a>
+        <a href="#" class="text-dark-200 text-sm font-medium hover:text-primary-300">Explorar</a>
+        <a href="#" class="text-dark-200 text-sm font-medium hover:text-primary-300">Biblioteca</a>
+        <a href="#" class="text-dark-200 text-sm font-medium hover:text-primary-300">Premium</a>
+        <a href="./contato.html" class="text-dark-200 text-sm font-medium hover:text-primary-300">Contato</a>
+    </nav>
+
+
     <main class="flex-grow container mx-auto px-4 py-8">
         <!-- Seção Hero -->
         <section style="margin-bottom: -50px;">
@@ -93,7 +103,7 @@
             </div>
 
             <!-- destaque dos principais beneficios do aplicativo -->
-            <div class="grid grid-cols-3 mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-6">
                 <div
                     class="bg-gradient-to-br from-dark-800 to-dark-900 m-auto max-w-sm p-6 border border-purple-500 rounded-lg shadow-sm">
                     <i class="fa-solid fa-file-audio" style="color: #8458f0; font-size: 28px; margin-bottom: 5%;"></i>
@@ -296,7 +306,8 @@
                 <!-- Álbum 1 -->
                 <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
                     <div class="relative mb-4">
-                        <img src="https://i.discogs.com/VyQL02d1Aife4nnwmaAgm5OlpzYDCImJlDtfnxmZ7N8/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjM1/OTU5LTE2MDU3NDE3/NjItODIwNC5qcGVn.jpeg" alt="Wishes Hidden In The Foreground Noises" class="w-full rounded-lg">
+                        <img src="https://i.discogs.com/VyQL02d1Aife4nnwmaAgm5OlpzYDCImJlDtfnxmZ7N8/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjM1/OTU5LTE2MDU3NDE3/NjItODIwNC5qcGVn.jpeg"
+                            alt="Wishes Hidden In The Foreground Noises" class="w-full rounded-lg">
                         <button
                             class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
                             <i class="fas fa-play"></i>
@@ -309,7 +320,8 @@
                 <!-- Álbum 2 -->
                 <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
                     <div class="relative mb-4">
-                        <img src="https://i.discogs.com/UJLcI_aMXy7tC7meUirxAfqIaP5N4fvT47X26MFzrRA/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjM2/MTIyLTE2MDU3NDIw/MjUtMzkxMC5qcGVn.jpeg" alt="Tears Will Become Melodies Tonight" class="w-full rounded-lg">
+                        <img src="https://i.discogs.com/UJLcI_aMXy7tC7meUirxAfqIaP5N4fvT47X26MFzrRA/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjM2/MTIyLTE2MDU3NDIw/MjUtMzkxMC5qcGVn.jpeg"
+                            alt="Tears Will Become Melodies Tonight" class="w-full rounded-lg">
                         <button
                             class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
                             <i class="fas fa-play"></i>
@@ -322,7 +334,8 @@
                 <!-- Álbum 3 -->
                 <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
                     <div class="relative mb-4">
-                        <img src="https://i.discogs.com/o_TAE-hinEHmp1B1dY7L0E92WtmMQdbEk0KAQ555IWk/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTg5/NDU5LTE1NDYwMDQ4/MTQtOTE0MS5qcGVn.jpeg" alt="Each And Every Word Leaves Me Here Alone" class="w-full rounded-lg">
+                        <img src="https://i.discogs.com/o_TAE-hinEHmp1B1dY7L0E92WtmMQdbEk0KAQ555IWk/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTg5/NDU5LTE1NDYwMDQ4/MTQtOTE0MS5qcGVn.jpeg"
+                            alt="Each And Every Word Leaves Me Here Alone" class="w-full rounded-lg">
                         <button
                             class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
                             <i class="fas fa-play"></i>
@@ -335,7 +348,8 @@
                 <!-- Álbum 4 -->
                 <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
                     <div class="relative mb-4">
-                        <img src="https://i.discogs.com/ULHB14c6s0TXKePb8kG9M9s7n58_fl8N0CvZZh9bnfc/rs:fit/g:sm/q:90/h:560/w:560/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODk3/MzQzLTE1MDYzMjUx/NTgtNDUwOC5qcGVn.jpeg" alt="Seated With Liquor" class="w-full rounded-lg">
+                        <img src="https://i.discogs.com/ULHB14c6s0TXKePb8kG9M9s7n58_fl8N0CvZZh9bnfc/rs:fit/g:sm/q:90/h:560/w:560/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODk3/MzQzLTE1MDYzMjUx/NTgtNDUwOC5qcGVn.jpeg"
+                            alt="Seated With Liquor" class="w-full rounded-lg">
                         <button
                             class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
                             <i class="fas fa-play"></i>
@@ -348,7 +362,8 @@
                 <!-- Álbum 5 -->
                 <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
                     <div class="relative mb-4">
-                        <img src="https://i.discogs.com/-17E2X7zbd-r6G0K0rUQdtY4DOKVhCTgBKOSoIKl_pk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMzU2/MzYyLTE1MzM1OTA4/MTAtOTgxNi5qcGVn.jpeg" alt="Stories That Last Through The Sleepless Nights" class="w-full rounded-lg">
+                        <img src="https://i.discogs.com/-17E2X7zbd-r6G0K0rUQdtY4DOKVhCTgBKOSoIKl_pk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMzU2/MzYyLTE1MzM1OTA4/MTAtOTgxNi5qcGVn.jpeg"
+                            alt="Stories That Last Through The Sleepless Nights" class="w-full rounded-lg">
                         <button
                             class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
                             <i class="fas fa-play"></i>
@@ -367,7 +382,7 @@
                 <a href="#" class="text-primary-400 hover:text-primary-300 text-sm font-medium">Ver todas</a>
             </div>
 
-            <div class="bg-dark-800 rounded-xl overflow-hidden shadow-lg">
+            <div class="bg-dark-800 rounded-xl overflow-x-auto shadow-lg">
                 <!-- Tabela -->
                 <div
                     class="grid grid-cols-12 gap-4 px-6 py-3 border-b border-dark-700 text-dark-400 text-sm font-medium">
@@ -376,12 +391,12 @@
                     <div class="col-span-4 md:col-span-3">ÁLBUM</div>
                     <div class="col-span-1 md:col-span-1">DURAÇÃO</div>
                 </div>
-
+                
                 <!-- Lista de músicas -->
                 <div class="divide-y divide-dark-700">
                     <!-- Música 1 -->
                     <div
-                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
+                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer col-span-5 sm:col-span-6">
                         <div class="col-span-1 text-dark-400">1</div>
                         <div class="col-span-5 md:col-span-6 flex items-center">
                             <img src="https://i.discogs.com/aYZdMs0-RQC5EYNVMA99NtmIGBurPWwgLGiMg6PDkKI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MDk5/MDg4LTE1ODY2NjU5/MzEtMjk4OS5qcGVn.jpeg"
@@ -402,7 +417,7 @@
 
                     <!-- Música 2 -->
                     <div
-                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
+                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer col-span-5 sm:col-span-6">
                         <div class="col-span-1 text-dark-400">2</div>
                         <div class="col-span-5 md:col-span-6 flex items-center">
                             <img src="https://i.discogs.com/JZbgQ_R55wElLnyUtCk0igyw_e3pd2M9tjBfovk0lK0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NTI0/ODItMTczOTk4NDQ3/My00MTk0LmpwZWc.jpeg"
@@ -423,7 +438,7 @@
 
                     <!-- Música 3 -->
                     <div
-                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
+                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer col-span-5 sm:col-span-6">
                         <div class="col-span-1 text-dark-400">3</div>
                         <div class="col-span-5 md:col-span-6 flex items-center">
                             <img src="https://i.discogs.com/ULHB14c6s0TXKePb8kG9M9s7n58_fl8N0CvZZh9bnfc/rs:fit/g:sm/q:90/h:560/w:560/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODk3/MzQzLTE1MDYzMjUx/NTgtNDUwOC5qcGVn.jpeg"
@@ -444,7 +459,7 @@
 
                     <!-- Música 4 -->
                     <div
-                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
+                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer col-span-5 sm:col-span-6">
                         <div class="col-span-1 text-dark-400">4</div>
                         <div class="col-span-5 md:col-span-6 flex items-center">
                             <img src="https://i.discogs.com/ZsL3D18iyCbpILm0JeqfBLx0kQ0fnX34gZHfhpCJkUE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4ODI4/MzIyLTE3MDA4NjY0/MDQtMTU3OC5qcGVn.jpeg"
@@ -465,7 +480,7 @@
 
                     <!-- Música 5 -->
                     <div
-                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer">
+                        class="song-item grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-dark-700 cursor-pointer col-span-5 sm:col-span-6">
                         <div class="col-span-1 text-dark-400">5</div>
                         <div class="col-span-5 md:col-span-6 flex items-center">
                             <img src="https://i.discogs.com/HdY1UmUItuXBfERjc2rZgqriZR_gu09Dw8daLeg6i04/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NTY4/MjEtMTM2NTM3NDA1/Mi0yOTMwLmpwZWc.jpeg"
@@ -597,13 +612,13 @@
         <div class="container mx-auto">
             <!-- Barra de progresso -->
             <div class="progress-bar mb-2 rounded-full">
-                <div class="progress-fill rounded-full"></div>
+                <div class="progress-fill rounded-full flex items-center space-x-4 sm:w-1/3 w-full justify-center sm:justify-start"></div>
             </div>
 
-            <div class="flex items-center justify-between">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0 px-4 py-2">
                 <!-- Informações da música -->
-                <div class="flex items-center space-x-4 w-1/4">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Paramore_-_Riot%21.png/250px-Paramore_-_Riot%21.png"
+                <div class="flex items-center space-x-4 sm:w-1/3 w-full justify-center sm:justify-start">
+                    <img src="https://i.discogs.com/DsAFhV8xI3QmBnQP21VZFDdWd6PFVKPvJdrz3pZ1iBg/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTYw/NDctMTIyNTQxNTIy/OS5qcGVn.jpeg"
                         alt="Riot!" class="w-12 h-12 rounded">
                     <div>
                         <p class="font-medium text-white">Misery Business</p>
@@ -635,7 +650,7 @@
                 </div>
 
                 <!-- Controles de volume e outros -->
-                <div class="flex items-center space-x-4 justify-end w-1/4">
+                <div class="flex items-center space-x-4 sm:w-1/3 w-full justify-center sm:justify-start">
                     <button class="text-dark-400 hover:text-white">
                         <i class="fas fa-list-ul"></i>
                     </button>
@@ -661,7 +676,7 @@
     </div>
 
     <!-- Rodapé -->
-    <footer class="bg-dark-900 text-dark-400 py-12 mt-12">
+    <footer class="bg-dark-900 text-dark-400 py-12 mt-12 px-4 sm:px-8">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>

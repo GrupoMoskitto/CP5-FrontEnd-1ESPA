@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,6 +42,7 @@
         }
     </script>
 </head>
+
 <body class="min-h-screen flex flex-col bg-dark-900 text-dark-100 font-poppins">
     <header class="bg-dark-900 py-4 px-6 shadow-lg">
         <div class="container mx-auto flex justify-between items-center">
@@ -56,7 +58,8 @@
                 <a href="#" class="text-primary-300">Contato</a>
             </nav>
             <div class="flex items-center space-x-4">
-                <button class="bg-primary-600 hover:bg-primary-500 text-white px-4 py-2 rounded-full font-medium transition">
+                <button
+                    class="bg-primary-600 hover:bg-primary-500 text-white px-4 py-2 rounded-full font-medium transition">
                     Entrar
                 </button>
                 <button class="md:hidden text-dark-200">
@@ -66,36 +69,55 @@
         </div>
     </header>
 
+    <!-- Menu Mobile (visível apenas em telas pequenas) -->
+    <nav id="mobile-menu" class="md:hidden hidden mt-4 flex justify-between bg-dark-800 rounded-lg px-4 py-2 shadow-md">
+        <a href="./index.html" class="text-dark-200 text-sm font-medium hover:text-primary-300">Início</a>
+        <a href="#" class="text-dark-200 text-sm font-medium hover:text-primary-300">Explorar</a>
+        <a href="#" class="text-dark-200 text-sm font-medium hover:text-primary-300">Biblioteca</a>
+        <a href="#" class="text-dark-200 text-sm font-medium hover:text-primary-300">Premium</a>
+        <a href="./contato.html" class="text-primary-300 text-sm font-medium hover:text-primary-400">Contato</a>
+    </nav>
+
     <main class="flex-grow container mx-auto px-4 py-12">
         <section class="mb-12">
             <div class="bg-gradient-to-r from-dark-800 to-dark-900 rounded-2xl p-8 md:p-12 shadow-lg">
                 <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Entre em Contato</h2>
                 <p class="text-dark-300 text-lg mb-6 max-w-2xl">
-                    Gostaria de entrar em contato com a equipe do App Melodia? Preencha o formulário abaixo e nós retornaremos em breve!
+                    Gostaria de entrar em contato com a equipe do App Melodia? Preencha o formulário abaixo e nós
+                    retornaremos em breve!
                 </p>
-                
+
                 <form id="contactForm" class="space-y-6">
                     <div>
                         <label for="name" class="block text-dark-200 mb-2">Nome</label>
-                        <input type="text" id="name" name="name" class="w-full p-3 bg-dark-800 border border-dark-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-white placeholder-dark-400" placeholder="Seu nome" required>
+                        <input type="text" id="name" name="name"
+                            class="w-full p-3 bg-dark-800 border border-dark-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-white placeholder-dark-400"
+                            placeholder="Seu nome" required>
                     </div>
 
                     <div>
                         <label for="email" class="block text-dark-200 mb-2">Email</label>
-                        <input type="email" id="email" name="email" class="w-full p-3 bg-dark-800 border border-dark-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-white placeholder-dark-400" placeholder="seu@email.com" required>
+                        <input type="email" id="email" name="email"
+                            class="w-full p-3 bg-dark-800 border border-dark-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-white placeholder-dark-400"
+                            placeholder="seu@email.com" required>
                     </div>
 
                     <div>
                         <label for="subject" class="block text-dark-200 mb-2">Assunto</label>
-                        <input type="text" id="subject" name="subject" class="w-full p-3 bg-dark-800 border border-dark-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-white placeholder-dark-400" placeholder="Assunto do contato" required>
+                        <input type="text" id="subject" name="subject"
+                            class="w-full p-3 bg-dark-800 border border-dark-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-white placeholder-dark-400"
+                            placeholder="Assunto do contato" required>
                     </div>
 
                     <div>
                         <label for="message" class="block text-dark-200 mb-2">Mensagem</label>
-                        <textarea id="message" name="message" rows="5" class="w-full p-3 bg-dark-800 border border-dark-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-white placeholder-dark-400" placeholder="Sua mensagem" required></textarea>
+                        <textarea id="message" name="message" rows="5"
+                            class="w-full p-3 bg-dark-800 border border-dark-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-white placeholder-dark-400"
+                            placeholder="Sua mensagem" required></textarea>
                     </div>
 
-                    <button type="submit" class="bg-primary-600 hover:bg-primary-500 text-white px-6 py-3 rounded-full font-medium transition flex items-center">
+                    <button type="submit"
+                        class="bg-primary-600 hover:bg-primary-500 text-white px-6 py-3 rounded-full font-medium transition flex items-center">
                         <i class="fas fa-paper-plane mr-2"></i> Enviar Mensagem
                     </button>
                 </form>
@@ -116,13 +138,17 @@
                     </div>
                     <p class="mb-4">Sua música, sua forma. Descubra, ouça e compartilhe suas músicas favoritas.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h3 class="text-white font-bold mb-4">Empresa</h3>
                     <ul class="space-y-2">
@@ -131,7 +157,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="border-t py-20 border-dark-800 mt-8 pt-8 text-sm">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <div class="flex space-x-4 mb-4 md:mb-0">
@@ -148,7 +174,24 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script>
+        function redirectHome() {
+            window.location.href = "./index.html";
+        }
+
+        // Menu Mobile toggle
+        const menuBtn = document.querySelector('.fa-bars');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
     <script src="./src/scripts/script.js"></script>
     <script src="./src/scripts/contato.js"></script>
+
 </body>
+
 </html>
