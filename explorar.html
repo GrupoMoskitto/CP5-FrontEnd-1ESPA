@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Melodia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="./src/assets/favicon.png" type="image/x-icon">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            100: '#d8c4ff',
+                            200: '#b388ff',
+                            300: '#8a5cf7',
+                            400: '#6a3ce8',
+                            500: '#4a1fd9',
+                            600: '#3a19b5',
+                            700: '#2a1391',
+                            800: '#1a0d6d',
+                            900: '#0a0749',
+                        },
+                        dark: {
+                            100: '#f1f1f1',
+                            200: '#d4d4d4',
+                            300: '#b8b8b8',
+                            400: '#9c9c9c',
+                            500: '#808080',
+                            600: '#636363',
+                            700: '#474747',
+                            800: '#2a2a2a',
+                            900: '#0e0e0e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <header class="bg-dark-900 py-4 px-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2" id="href-home" onclick="redirectHome()">
+                <img src="./src/assets/mkttlogo.png" class="fas h-10 w-10 text-primary-400 text-2xl"></img>
+                <h1 class="text-2xl font-bold gradient-text">App Melodia</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-primary-300">Início</a>
+                <a href="explorar.html" class="text-dark-200 hover:text-primary-300 transition">Explorar</a>
+                <a href="#" class="text-dark-200 hover:text-primary-300 transition">Biblioteca</a>
+                <a href="#" class="text-dark-200 hover:text-primary-300 transition">Premium</a>
+                <a href="./contato.html" class="text-dark-200 hover:text-primary-300 transition">Contato</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button
+                    class="bg-primary-600 hover:bg-primary-500 text-white px-4 py-2 rounded-full font-medium transition">
+                    Entrar
+                </button>
+                <button class="md:hidden text-dark-200">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Mobile (visível apenas em telas pequenas) -->
+    <nav id="mobile-menu" class="md:hidden hidden mt-4 flex justify-between bg-dark-800 rounded-lg px-4 py-2 shadow-md">
+        <a href="./index.html" class="text-primary-300 text-sm font-medium hover:text-primary-400">Início</a>
+        <a href="#" class="text-dark-200 text-sm font-medium hover:text-primary-300">Explorar</a>
+        <a href="#" class="text-dark-200 text-sm font-medium hover:text-primary-300">Biblioteca</a>
+        <a href="#" class="text-dark-200 text-sm font-medium hover:text-primary-300">Premium</a>
+        <a href="./contato.html" class="text-dark-200 text-sm font-medium hover:text-primary-300">Contato</a>
+    </nav>
+
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+
+
+        <!-- Artistas Populares -->
+        <section class="mb-12">
+            <div class="flex justify-between items-center mb-6">
+
+                <h3 class="text-2xl font-bold">Artistas Populares</h3>
+                <a href="#" class="text-primary-400 hover:text-primary-300 text-sm font-medium">Ver todos</a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab6761610000e5ebba50ca67ffc3097f6ea1710a" style="border-radius: 50%;"
+                            alt="" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">Playboi Carti</h4>
+                    <p class="text-dark-400 text-sm">Artista</p>
+                </div>
+
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab6761610000e5ebe03a98785f3658f0b6461ec4" style="border-radius: 50%;"
+                            alt="" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">Olivia Rodrigo</h4>
+                    <p class="text-dark-400 text-sm">Artista</p>
+                </div>
+
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb95ccca370d8bd50e84c222bc" style="border-radius: 50%;"
+                            alt="" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">Ken Carson</h4>
+                    <p class="text-dark-400 text-sm">Artista</p>
+                </div>
+
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab6761610000e5ebb256ae9a4b82bfff97776ae2" style="border-radius: 50%;"
+                            alt="" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">Panic! At The Disco</h4>
+                    <p class="text-dark-400 text-sm">Artista</p>
+                </div>
+
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab6765630000ba8abe5a90f029b677a12ff9c51d" style="border-radius: 50%;"
+                            alt="podpah" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">Podpah</h4>
+                    <p class="text-dark-400 text-sm">Podcast</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- álbuns populares -->
+        <section class="mb-12">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">Álbuns Populares</h3>
+                <a href="#" class="text-primary-400 hover:text-primary-300 text-sm font-medium">Ver todos</a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+
+                <!-- Álbum 1 -->
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2736b219c8d8462bfe254a20469"
+                            alt="" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">MUSIC</h4>
+                    <p class="text-dark-400 text-sm">Playboi Carti</p>
+                </div>
+
+                <!-- Álbum 2 -->
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27398ea0e689c91f8fea726d9bb"
+                            alt="wlr" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">Whole Lotta Red</h4>
+                    <p class="text-dark-400 text-sm">Playboi Carti</p>
+                </div>
+
+                <!-- Álbum 3 -->
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273a91c10fe9472d9bd89802e5a"
+                            alt="" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">Sour</h4>
+                    <p class="text-dark-400 text-sm">Olivia Rodrigo</p>
+                </div>
+
+                <!-- Álbum 4 -->
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27341d1b0c49428e806d5813da3"
+                            alt="" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">Sou Tricampeão Mundial (Rafinha Version)</h4>
+                    <p class="text-dark-400 text-sm">Torcida Tricolor</p>
+                </div>
+
+                <!-- Álbum 5 -->
+                <div class="album-cover bg-dark-800 rounded-xl p-4 shadow-md cursor-pointer">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273881d8d8378cd01099babcd44"
+                            alt="" class="w-full rounded-lg">
+                        <button
+                            class="play-btn absolute bottom-2 right-2 bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h4 class="font-bold text-white">Utopia</h4>
+                    <p class="text-dark-400 text-sm">Travis Scott</p>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+        <!-- Player de Música -->
+        <div class="music-player fixed bottom-0 left-0 right-0 bg-dark-800 border-t border-dark-700 shadow-lg">
+            <div class="container mx-auto">
+                <!-- Barra de progresso -->
+                <div class="progress-bar mb-2 rounded-full">
+                    <div
+                        class="progress-fill rounded-full flex items-center space-x-4 sm:w-1/3 w-full justify-center sm:justify-start">
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0 px-4 py-2">
+                    <!-- Informações da música -->
+                    <div class="flex items-center space-x-4 sm:w-1/3 w-full justify-center sm:justify-start">
+                        <img src="https://i.discogs.com/DsAFhV8xI3QmBnQP21VZFDdWd6PFVKPvJdrz3pZ1iBg/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTYw/NDctMTIyNTQxNTIy/OS5qcGVn.jpeg"
+                            alt="Riot!" class="w-12 h-12 rounded">
+                        <div>
+                            <p class="font-medium text-white">Misery Business</p>
+                            <p class="text-sm text-dark-400">Paramore</p>
+                        </div>
+                        <button class="text-dark-400 hover:text-white">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <!-- Controles do player -->
+                    <div class="flex items-center justify-center space-x-6">
+                        <button class="text-dark-400 hover:text-white">
+                            <i class="fas fa-random"></i>
+                        </button>
+                        <button class="text-dark-400 hover:text-white">
+                            <i class="fas fa-step-backward"></i>
+                        </button>
+                        <button
+                            class="play-btn player-controls bg-primary-500 hover:bg-primary-400 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="text-dark-400 hover:text-white">
+                            <i class="fas fa-step-forward"></i>
+                        </button>
+                        <button class="text-dark-400 hover:text-white">
+                            <i class="fas fa-redo"></i>
+                        </button>
+                    </div>
+
+                    <!-- Controles de volume e outros -->
+                    <div class="flex items-center space-x-4 lg:justify-end sm:w-1/3 sm:justify-center">
+                        <button class="text-dark-400 hover:text-white">
+                            <i class="fas fa-list-ul"></i>
+                        </button>
+                        <button class="text-dark-400 hover:text-white">
+                            <i class="fas fa-laptop"></i>
+                        </button>
+                        <!-- Controle de Volume Visual (arrastável mas não funcional) -->
+                        <div class="flex items-center volume-control">
+                            <button class="text-dark-400 hover:text-white">
+                                <i class="fas fa-volume-up text-lg"></i>
+                            </button>
+                            <div class="volume-slider-container ml-2">
+                                <div class="w-24 h-1 bg-dark-600 rounded-full relative">
+                                    <div class="volume-slider h-full rounded-full" style="width: 75%"></div>
+                                    <div class="volume-dot absolute top-1/2 transform -translate-y-1/2 w-3 h-3 bg-white rounded-full cursor-grab active:cursor-grabbing"
+                                        style="left: 72%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <footer class="bg-dark-900 text-dark-400 py-12 mt-12 px-4 sm:px-8">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <div class="flex items-center space-x-2 mb-4">
+                            <img src="./src/assets/mkttlogo.png" class="fas h-10 w-10 text-primary-400 text-2xl"></img>
+                            <h2 class="text-2xl font-bold gradient-text">App Melodia</h2>
+                        </div>
+                        <p class="mb-4">Sua música, sua forma. Descubra, ouça e compartilhe suas músicas favoritas.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-dark-400 hover:text-primary-400 text-xl"><i
+                                    class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-white font-bold mb-4">Empresa</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-primary-400 transition">Sobre</a></li>
+                            <li><a href="./contato.html" class="hover:text-primary-400 transition">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-dark-800 mt-8 pt-8 text-sm">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <div class="flex space-x-4 mb-4 md:mb-0">
+                            <a href="#" class="hover:text-primary-400">Legal</a>
+                            <a href="#" class="hover:text-primary-400">Centro de Privacidade</a>
+                            <a href="#" class="hover:text-primary-400">Política de Privacidade</a>
+                            <a href="#" class="hover:text-primary-400">Cookies</a>
+                        </div>
+                        <div>
+                            <p>© 2025 App Melodia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+        <script src="./src/scripts/carrossel.js"></script>
+        <script src="./src/scripts/script.js"></script>
+</body>
+
+</html>
