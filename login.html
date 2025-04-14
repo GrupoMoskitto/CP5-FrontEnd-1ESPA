@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - App Melodia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="./src/assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/login.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            100: '#d8c4ff',
+                            200: '#b388ff',
+                            300: '#8a5cf7',
+                            400: '#6a3ce8',
+                            500: '#4a1fd9',
+                            600: '#3a19b5',
+                            700: '#2a1391',
+                            800: '#1a0d6d',
+                            900: '#0a0749',
+                        },
+                        dark: {
+                            100: '#f1f1f1',
+                            200: '#d4d4d4',
+                            300: '#b8b8b8',
+                            400: '#9c9c9c',
+                            500: '#808080',
+                            600: '#636363',
+                            700: '#474747',
+                            800: '#2a2a2a',
+                            900: '#0e0e0e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+    <div class="login-container relative">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <div class="text-center mb-6">
+            <div class="logo-container">
+                <img src="./src/assets/mkttlogo.png" alt="App Melodia Logo" class="h-8 w-8">
+                <h1 class="text-2xl font-semibold gradient-text">App Melodia</h1>
+            </div>
+        </div>
+
+        <form class="space-y-4">
+            <div class="relative">
+                <input id="identifier" type="text" class="input-field" placeholder="E-mail ou Nome de Usuário" required>
+            </div>
+            <div class="relative">
+                <input id="password" type="password" class="input-field" placeholder="Senha" required>
+                <i id="password-toggle" class="fas fa-eye password-toggle"></i>
+            </div>
+            <div class="flex justify-between text-sm">
+                <a href="#" class="link">Esqueceu a senha?</a>
+                <a href="#" class="link">Criar conta</a>
+            </div>
+            <button type="submit">
+                Entrar
+            </button>
+        </form>
+
+        <div class="divider">ou</div>
+
+        <div class="grid grid-cols-3 gap-3">
+            <button class="social-btn">
+                <i class="fab fa-google text-primary-400"></i>
+            </button>
+            <button class="social-btn">
+                <i class="fab fa-apple text-primary-400"></i>
+            </button>
+            <button class="social-btn">
+                <i class="fas fa-phone text-primary-400"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="./src/scripts/login.js"></script>
+</body>
+</html>
